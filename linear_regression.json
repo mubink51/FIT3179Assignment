@@ -1,5 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "height": 400,
+  "width": 600,
+  "background": "#f5f3ed",
+  "title": {
+    "text": "Relationship between political leaning and",
+    "fontSize": 26
+  },
   "data": {
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/final.csv"
   },
@@ -29,16 +36,16 @@
     }
   ],
   "transform": [
-    {"calculate": "datum.MOV2016", "as": "juniper"},
+    {"calculate": "datum.MOV-0.5", "as": "juniper"},
     {"calculate": "datum.MOV2016", "as": "thingo"},
     {"calculate": "datum[y_axis_select]", "as": "y_variable"}
   ],
   "layer": [
     {
-      "mark": {"type": "square", "filled": true},
+      "mark": {"type": "circle", "size": 70, "filled": true},
       "encoding": {
         "x": {
-          "field": "MOV2016",
+          "field": "juniper",
           "type": "quantitative",
           "title": "Republican Majority"
         },
@@ -47,20 +54,24 @@
           "type": "quantitative",
           "title": "y_axis_select"
         },
-        "tooltip": {"field": "thingo"}
+        "tooltip": [
+          {"field": "MOV"},
+          {"field": "state"},
+          {"field": "y_variable"}
+        ]
       }
     },
     {
       "mark": {"type": "line", "color": "firebrick"},
-      "transform": [{"regression": "y_variable", "on": "MOV2016"}],
+      "transform": [{"regression": "y_variable", "on": "juniper"}],
       "encoding": {
-        "x": {"field": "MOV2016", "type": "quantitative"},
+        "x": {"field": "juniper", "type": "quantitative"},
         "y": {"field": "y_variable", "type": "quantitative"}
       }
     },
     {
       "transform": [
-        {"regression": "y_variable", "on": "MOV2016", "params": true},
+        {"regression": "y_variable", "on": "juniper", "params": true},
         {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
       ],
       "mark": {
@@ -68,7 +79,8 @@
         "color": "firebrick",
         "x": "width",
         "align": "right",
-        "y": -5
+        "y": -5,
+        "size": 15
       },
       "encoding": {"text": {"type": "nominal", "field": "R2"}}
     }
