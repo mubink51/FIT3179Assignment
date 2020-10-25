@@ -29,6 +29,12 @@
 <div id="vis4"></div>
  <p>Some text4</p>
 <script type="text/javascript">
+  var spec5 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/donut.json";
+  
+  vegaEmbed('#vis5', spec5).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
   var spec3 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/party_subregions.json";
   
   vegaEmbed('#vis3', spec3).then(function(result) {
@@ -53,6 +59,7 @@
   vegaEmbed('#vis', spec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+  
   
 
 
