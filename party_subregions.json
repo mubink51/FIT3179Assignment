@@ -4,8 +4,8 @@
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Hw2/main/normalised_data.csv"
   },
   "background": "#f5f3ed",
-  "width": 600,
-  "height": 400,
+  "width": 500,
+  "height": 600,
   "params": [
     {
       "name": "year_select",
@@ -36,7 +36,17 @@
           "stack": "normalize",
           "title": "Proportion of Vote"
         },
-        "x": {"field": "Region"},
+        "x": {
+          "field": "Region",
+          "sort": [
+            "South East Central",
+            "South West Central",
+            "West North Central",
+            "Mountain",
+            "East North Central",
+            "South Atlantic"
+          ]
+        },
         "color": {
           "field": "Politic",
           "scale": {"range": ["#125be3", "#e31212"]},
