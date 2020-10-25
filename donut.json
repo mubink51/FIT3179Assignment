@@ -3,7 +3,7 @@
   "description": "A simple donut chart with embedded data.",
   "height": 300,
   "width": 400,
-  "title": "Proportion of Population in Democratic and Republican States",
+  "title": "Proportion of US Population in Democratic and Republican Majority States",
   "background": "#f5f3ed",
   "data": {
     "values": [
