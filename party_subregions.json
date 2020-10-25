@@ -4,8 +4,8 @@
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Hw2/main/normalised_data.csv"
   },
   "background": "#f5f3ed",
-  "width": 500,
-  "height": 600,
+  "width": 600,
+  "height": 400,
   "params": [
     {
       "name": "year_select",
