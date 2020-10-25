@@ -1,0 +1,176 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A simple donut chart with embedded data.",
+  "height": 300,
+  "width": 400,
+  "title": "Proportion of Population in Democratic and Republican States",
+  "background": "#f5f3ed",
+  "data": {
+    "values": [
+      {
+        "category": "Democrat",
+        "value": 140179322,
+        "year": "2016",
+        "proportion": "43.41%",
+        "proportion2": "",
+        "proportion3": "43.41%"
+      },
+      {
+        "category": "Republican",
+        "value": 182761989,
+        "year": "2016",
+        "proportion2": "56.59%",
+        "proportion": "",
+        "proportion3": "56.59%"
+      },
+      {
+        "category": "Democrat",
+        "value": 199360199,
+        "year": "2012",
+        "proportion": "63.52%",
+        "proportion2": "",
+        "proportion3": "63.52%"
+      },
+      {
+        "category": "Republican",
+        "value": 114470791,
+        "year": "2012",
+        "proportion2": "36.48%",
+        "proportion": "",
+        "proportion3": "36.48%"
+      },
+      {
+        "category": "Democrat",
+        "value": 215979590,
+        "year": "2008",
+        "proportion": "71.02%",
+        "proportion2": "",
+        "proportion3": "71.02%"
+      },
+      {
+        "category": "Republican",
+        "value": 88114376,
+        "year": "2008",
+        "proportion2": "28.98%",
+        "proportion": "",
+        "proportion3": "28.98%"
+      },
+      {
+        "category": "Democrat",
+        "value": 141212105,
+        "year": "2004",
+        "proportion": "48.23%",
+        "proportion2": "",
+        "proportion3": "48.23%"
+      },
+      {
+        "category": "Republican",
+        "value": 151593193,
+        "year": "2004",
+        "proportion2": "51.77%",
+        "proportion": "",
+        "proportion3": "51.77%"
+      },
+      {
+        "category": "Democrat",
+        "value": 157129670,
+        "year": "2000",
+        "proportion": "55.69%",
+        "proportion2": "",
+        "proportion3": "55.69%"
+      },
+      {
+        "category": "Republican",
+        "value": 125032741,
+        "year": "2000",
+        "proportion2": "44.31%",
+        "proportion": "",
+        "proportion3": "44.31%"
+      },
+      {
+        "category": "Democrat",
+        "value": 194945882,
+        "year": "1996",
+        "proportion": "71.65%",
+        "proportion2": "",
+        "proportion3": "71.65%"
+      },
+      {
+        "category": "Republican",
+        "value": 77138965,
+        "year": "1996",
+        "proportion2": "28.35%",
+        "proportion": "",
+        "proportion3": "28.35%"
+      }
+    ]
+  },
+  "params": [
+    {
+      "name": "Year_select",
+      "value": 2016,
+      "bind": {
+        "input": "range",
+        "min": 1996,
+        "max": 2016,
+        "step": 4,
+        "name": "Select Election"
+      }
+    }
+  ],
+  "transform": [{"filter": "datum.year==Year_select"}],
+  "layer": [
+    {
+      "mark": {"type": "arc", "innerRadius": 70},
+      "selection": {
+        "party_highlight": {
+          "type": "single",
+          "bind": "legend",
+          "fields": ["category"],
+          "on": "mouseover"
+        }
+      },
+      "encoding": {
+        "theta": {"field": "value", "type": "quantitative"},
+        "tooltip": [
+          {"field": "category", "title": "Party"},
+          {"field": "proportion3", "title": "Proportion of Population"}
+        ],
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "legend": {"title": "Party"},
+          "scale": {"range": ["#125be3", "#e31212"]}
+        },
+        "opacity": {
+          "condition": {"selection": "party_highlight", "value": 0.9},
+          "value": 0.2
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "x": 150,
+        "y": 56,
+        "color": "white",
+        "size": 15,
+        "fontWeight": "bold"
+      },
+      "encoding": {"text": {"field": "proportion2"}}
+    },
+    {
+      "mark": {
+        "type": "text",
+        "x": 245,
+        "y": 56,
+        "color": "white",
+        "size": 15,
+        "fontWeight": "bold"
+      },
+      "encoding": {"text": {"field": "proportion"}}
+    }
+  ],
+  "view": {"stroke": null},
+  "config": {}
+}
