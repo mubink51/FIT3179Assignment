@@ -85,5 +85,7 @@
       "encoding": {"text": {"type": "nominal", "field": "R2"}}
     }
   ],
-  "config": {}
+  "config": {
+    "style": {"cell": {"stroke": "transparent"}}
+  }
 }
