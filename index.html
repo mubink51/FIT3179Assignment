@@ -21,14 +21,27 @@
 <body>
 <h2> This Is Some Graphs. </h2>
 <div id="vis2"></div>
-
+  <p>Some text1</p>
 <div id="vis"></div>
-
+ <p>Some text2</p>
 <div id="vis3"></div>
-
+ <p>Some text3</p>
 <div id="vis4"></div>
-
+ <p>Some text4</p>
 <script type="text/javascript">
+  var spec3 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/party_subregions.json";
+  
+  vegaEmbed('#vis3', spec3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+
+ var spec4 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/regions_subregions.json";
+  
+  vegaEmbed('#vis4', spec4).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
   var spec2 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/Electoral.json";
   
   vegaEmbed('#vis2', spec2).then(function(result) {
@@ -41,18 +54,7 @@
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
-   var spec3 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/party_subregions.json";
-  
-  vegaEmbed('#vis3', spec3).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
 
-
- var spec4 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/regions_subregions.json";
-  
-  vegaEmbed('#vis4', spec4).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
 
 
 
