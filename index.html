@@ -25,12 +25,12 @@
   <p>Some text1</p>
 <div id="vis"></div>
  <p>Some text2</p>
-<div id="vis3"></div>
+<div id="vis6"></div>
  <p>Some text3</p>
 <div id="vis4"></div>
  <p>Some text4</p>
+<div id="vis3"></div>
 <div id="vis5"></div>
-  <div id="vis6"></div>
   <p>Some text1</p>
 <div id="vis7"></div>
  <p>Some text2</p>
@@ -40,66 +40,66 @@
  <p>Some text4</p>
 <div id="vis10"></div>
 <script type="text/javascript">
-  var spec6 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/donut.json";
+  var densityspec6 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/Density.json";
   
-  vegaEmbed('#vis6', spec6).then(function(result) {
+  vegaEmbed('#vis6', densityspec6).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
-  var spec7 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/party_subregions.json";
+  var edspec7 = "https://github.com/mubink51/FIT3179Assignment/blob/main/Political_Leaning_Education.json";
   
-  vegaEmbed('#vis7', spec7).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-
-
- var spec8 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/regions_subregions.json";
-  
-  vegaEmbed('#vis8', spec8).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-  
-  var spec9 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/Electoral.json";
-  
-  vegaEmbed('#vis9', spec9).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-  
-  var spec10 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/incomevsage.json";
-  
-  vegaEmbed('#vis10', spec10).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-  
-  
-  var spec5 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/donut.json";
-  
-  vegaEmbed('#vis5', spec5).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-  
-  var spec3 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/party_subregions.json";
-  
-  vegaEmbed('#vis3', spec3).then(function(result) {
+  vegaEmbed('#vis7', edspec7).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
 
- var spec4 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/regions_subregions.json";
+ var mwspec8 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/Political_Leaning_Minimum_Wage.json";
   
-  vegaEmbed('#vis4', spec4).then(function(result) {
+  vegaEmbed('#vis8', mwspec8).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
-  var spec2 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/Electoral.json";
+  var obesityspec9 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/Political_Leaning_Obesity.json";
   
-  vegaEmbed('#vis2', spec2).then(function(result) {
+  vegaEmbed('#vis9', obesityspec9).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
-  var spec = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/incomevsage.json";
+  var univspec10 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/Political_Leaning_Universities.json";
   
-  vegaEmbed('#vis', spec).then(function(result) {
+  vegaEmbed('#vis10', univspec10).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  
+  var donutspec5 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/donut.json";
+  
+  vegaEmbed('#vis5', donutspec5).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var psubspec3 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/party_subregions.json";
+  
+  vegaEmbed('#vis3', psubspec3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+
+ var regsubspec4 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/regions_subregions.json";
+  
+  vegaEmbed('#vis4', regsubspec4).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var electspec2 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/Electoral.json";
+  
+  vegaEmbed('#vis2', electspec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var incagespec = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/incomevsage.json";
+  
+  vegaEmbed('#vis', incagespec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
