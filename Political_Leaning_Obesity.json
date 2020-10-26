@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "height": 400,
+  "width": 600,
+  "background": "#f5f3ed",
+  "title": {"text": "Political Leaning and Obesity Levels", "fontSize": 26},
+  "data": {
+    "url": "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/final.csv"
+  },
+  "transform": [{"calculate": "datum.MOV+0.5", "as": "apple"}],
+  "layer": [
+    {
+      "mark": {"type": "circle", "size": 100, "filled": true},
+      "encoding": {
+        "x": {
+          "field": "adjmov",
+          "type": "quantitative",
+          "title": " <-- More Democratic                                                                                                   More Republican -->",
+          "axis": {"labels": false, "ticks": false}
+        },
+        "y": {
+          "field": "Adult_Obesity_100",
+          "type": "quantitative",
+          "title": "Obesity levels %",
+          "scale": {"domain": [0, 45]}
+        },
+        "color": {
+          "field": "Winning_Party",
+          "scale": {"range": ["#125be3", "#e31212"]}
+        },
+        "tooltip": [
+          {"field": "state", "title": "State"},
+          {"field": "Adult_Obesity_100", "title": "2017 Adult Obesity (%)"},
+          {"field": "MOV", "title": "Size of Republican Majority"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "firebrick"},
+      "transform": [{"regression": "Adult_Obesity_100", "on": "adjmov"}],
+      "encoding": {
+        "x": {"field": "adjmov", "type": "quantitative"},
+        "y": {"field": "Adult_Obesity_100", "type": "quantitative"}
+      }
+    },
+    {
+      "transform": [
+        {"regression": "Adult_Obesity_100", "on": "adjmov", "params": true},
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5,
+        "size": 15
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    },
+    {
+      "data": {"values": [{}]},
+      "layer": [
+        {
+          "mark": {"type": "rule", "strokeDash": [8, 8]},
+          "encoding": {
+            "x": {"datum": 0.87},
+            "size": {"value": 1},
+            "color": {"value": "gray"}
+          }
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "text": "Republican States",
+        "x": 500,
+        "y": 350,
+        "color": "#e31212",
+        "size": 14,
+        "fontWeight": "bolder"
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "text": "Democratic States",
+        "x": 260,
+        "y": 350,
+        "color": "#125be3",
+        "size": 14,
+        "fontWeight": "bolder"
+      }
+    }
+  ],
+  "config": {"style": {"cell": {"stroke": "transparent"}}}
+}
