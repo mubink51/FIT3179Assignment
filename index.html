@@ -8,6 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 <!-- Import pure.css -->
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Google font -->
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
@@ -29,7 +30,48 @@
 <div id="vis4"></div>
  <p>Some text4</p>
 <div id="vis5"></div>
+  <div id="vis6"></div>
+  <p>Some text1</p>
+<div id="vis7"></div>
+ <p>Some text2</p>
+<div id="vis8"></div>
+ <p>Some text3</p>
+<div id="vis9"></div>
+ <p>Some text4</p>
+<div id="vis10"></div>
 <script type="text/javascript">
+  var spec6 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/donut.json";
+  
+  vegaEmbed('#vis6', spec6).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var spec7 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/party_subregions.json";
+  
+  vegaEmbed('#vis7', spec7).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+
+ var spec8 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/regions_subregions.json";
+  
+  vegaEmbed('#vis8', spec8).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var spec9 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/Electoral.json";
+  
+  vegaEmbed('#vis9', spec9).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var spec10 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/incomevsage.json";
+  
+  vegaEmbed('#vis10', spec10).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  
   var spec5 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/donut.json";
   
   vegaEmbed('#vis5', spec5).then(function(result) {
