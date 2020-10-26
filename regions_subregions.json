@@ -102,7 +102,7 @@
   
   ],
   "config": {
-    "legend": {"labelFontSize": 11, "titleFontSize": 15, "titlePadding": 5},
+    "legend": {"labelFontSize": 11, "titleFontSize": 15, "titlePadding": 5, "orient": "none", "direction":"horizontal", "columns":4, "legendX":70, "legendY":400},
     "style": {"cell": {"stroke": "transparent"}}
   }
 }
