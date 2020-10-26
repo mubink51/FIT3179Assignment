@@ -12,7 +12,6 @@
     }
   },
   "params": [
-    
     {
       "name": "Map_type",
       "bind": {
@@ -118,7 +117,7 @@
         "tooltip": [
           {"field": "State", "title": "State"},
           {"field": "winning_party2", "title": "Winning Party"},
-          {"field": "mov", "title": "Margin of Victory"}
+          {"field": "mov", "title": "Margin of Victory", "format":".0%"}
         ]
       }
     },
@@ -154,7 +153,7 @@
         "tooltip": [
           {"field": "State", "title": "State"},
           {"field": "winning_party2", "title": "Winning Party"},
-          {"field": "mov", "title": "Margin of Victory"}
+          {"field": "mov", "title": "Margin of Victory", "format":".0%"}
         ]
       }
     }
