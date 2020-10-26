@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/final.csv"
+  },
+  "background": "#f5f3ed",
+  "width": 400,
+  "mark": {"type": "area", "interpolate": "cardinal"},
+  "encoding": {
+    "x": {
+      "field": "AverageHouseholdIncome",
+      "bin": true,
+      "title": "Average Income $"
+    },
+    "color": {
+      "field": "Winning_Party",
+      "scale": {"range": ["#125be3", "#e31212"]},
+      "legend": {"title": "Party "}
+    },
+    "y": {"aggregate": "count", "title": "Number Of States"},
+    "facet": {"field": "Winning_Party", "columns": 1, "title": ""}
+  },
+  "config": {}
+}
