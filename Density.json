@@ -4,7 +4,7 @@
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/final.csv"
   },
   "background": "#f5f3ed",
-  "width": 400,
+  "width": "container",
   "mark": {"type": "area", "interpolate": "cardinal"},
   "encoding": {
     "x": {
