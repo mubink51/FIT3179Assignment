@@ -2,10 +2,14 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 600,
   "height": 400,
-
   "background": "#f5f3ed",
-  "title": {"text": "US State Sub Regions", "fontSize": 30,
-  "subtitle":"Regions are labelled on map", "subtitleFontSize":20, "fontWeight":"bold"},
+  "title": {
+    "text": "US State Sub Regions",
+    "fontSize": 30,
+    "subtitle": "Regions are labelled on map",
+    "subtitleFontSize": 20,
+    "fontWeight": "bold"
+  },
   "data": {
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Hw2/main/ne_110m_admin_1_states_provinces%20(1).json",
     "format": {
@@ -13,96 +17,135 @@
       "feature": "ne_110m_admin_1_states_provinces"
     }
   },
-  
   "projection": {"type": "albersUsa"},
-  "layer":[{
-  "selection": {
-    "state_highlight": {
-      "type": "multi",
-      "fields": ["state"],
-      "bind": "legend",
-      "on": "mouseover"
-    },
-    "region_highlight": {
-      "type": "multi",
-      "fields": ["Region"],
-      "bind": "legend",
-      "on": "mouseover"
-    }
-  },
-  
-  "mark": {"type": "geoshape", "stroke": "#f5f3ed"},
-  "transform": [
+  "layer": [
     {
-      "lookup": "properties.name",
-      "from": {
-        "data": {
-          "url": "https://raw.githubusercontent.com/mubink51/FIT3179Hw2/main/final.csv"
+      "selection": {
+        "state_highlight": {
+          "type": "multi",
+          "fields": ["state"],
+          "bind": "legend",
+          "on": "mouseover"
         },
-        "key": "state",
-        "fields": [
-          "state",
-          "Specific_Region",
-          "population",
-          "Winning_Party",
-          "Region"
+        "region_highlight": {
+          "type": "multi",
+          "fields": ["Region"],
+          "bind": "legend",
+          "on": "mouseover"
+        }
+      },
+      "mark": {"type": "geoshape", "stroke": "#f5f3ed"},
+      "transform": [
+        {
+          "lookup": "properties.name",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/mubink51/FIT3179Hw2/main/final.csv"
+            },
+            "key": "state",
+            "fields": [
+              "state",
+              "Specific_Region",
+              "population",
+              "Winning_Party",
+              "Region"
+            ]
+          }
+        }
+      ],
+      "encoding": {
+        "color": {
+          "condition": {
+            "selection": "region_highlight",
+            "field": "Specific_Region",
+            "title": "Sub Region",
+            "scale": {
+              "range": [
+                "#65b839",
+                "#1255a6",
+                "#faaf3e",
+                "#355985",
+                "#b51414",
+                "#f05151",
+                "#de3333",
+                "#699651"
+              ]
+            }
+          },
+          "value": null
+        },
+        "opacity": {
+          "condition": {"selection": "state_highlight", "value": 0.9},
+          "value": 0.25
+        },
+        "tooltip": [
+          {"field": "Region"},
+          {"field": "Specific_Region", "title": "Sub Region"},
+          {"field": "population", "format": ","},
+          {"field": "Winning_Party", "title": "2016 Elected party"}
         ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "text": ["WEST"],
+        "x": 135,
+        "y": 170,
+        "size": 25,
+        "angle": 10,
+        "color": "darkblue",
+        "font": "lucida sans"
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "text": ["MID WEST"],
+        "x": 345,
+        "y": 130,
+        "size": 25,
+        "angle": 0,
+        "color": "darkgreen",
+        "font": "lucida sans"
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "text": ["SOUTH"],
+        "x": 385,
+        "y": 280,
+        "size": 25,
+        "angle": -12,
+        "color": "darkred",
+        "font": "lucida sans"
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "text": ["NORTH EAST"],
+        "x": 530,
+        "y": 110,
+        "size": 25,
+        "angle": -38,
+        "color": "#b38b0b",
+        "font": "lucida sans"
       }
     }
   ],
-  "encoding": {
-    "color": {
-      "condition": {
-        "selection": "region_highlight",
-        "field": "Specific_Region",
-        "title": "Sub Region",
-        "scale": {
-          "range": [
-            "#65b839",
-            "#1255a6",
-            "#e89a25",
-            "#355985",
-            "#b51414",
-            "#f05151",
-            "#de3333",
-            "#699651"
-          ]
-        }
-      },
-      "value": null
-    },
-    "opacity": {
-      "condition": {"selection": "state_highlight", "value": 0.9},
-      "value": 0.25
-    },
-    "tooltip": [
-      {"field": "Region"},
-      {"field": "Specific_Region", "title":"Sub Region"},
-      {"field": "population", "format": ","},
-      {"field": "Winning_Party", "title": "2016 Elected party"}
-    ]
-  }},
-  {
-    "mark":{"type":"text", "text":["WEST"], "x":135, "y":170, "size":25, "angle":10, "color":"darkblue", "font":"lucida sans"}
-  
-  },
-  {
-    "mark":{"type":"text", "text":["MID WEST"], "x":345, "y":130, "size":25, "angle":0, "color":"darkgreen", "font":"lucida sans"}
-  
-  },
-  {
-    "mark":{"type":"text", "text":["SOUTH"], "x":385, "y":280, "size":25, "angle":-12, "color":"darkred", "font":"lucida sans"}
-  
-  }
-  ,
-  {
-    "mark":{"type":"text", "text":["NORTH EAST"], "x":520, "y":120, "size":25, "angle":-38, "color":"lightyellow", "font":"lucida sans"}
-  
-  }
-  
-  ],
   "config": {
-    "legend": {"labelFontSize": 11, "titleFontSize": 15, "titlePadding": 5, "orient": "none", "direction":"horizontal", "columns":4, "legendX":70, "legendY":400},
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 15,
+      "titlePadding": 5,
+      "orient": "none",
+      "direction": "horizontal",
+      "columns": 4,
+      "legendX": 70,
+      "legendY": 400
+    },
     "style": {"cell": {"stroke": "transparent"}}
   }
 }
