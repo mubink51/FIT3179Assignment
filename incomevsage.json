@@ -1,10 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 600,
+  "width": 520,
   "height": 400,
   "background": "#f5f3ed",
   "title": {
-    "text": "Comparison of Income and Average Age across US states 2018 ",
+    "text": "Comparison of Income and Average Age",
     "fontSize": 30
   },
   "data": {
@@ -81,7 +81,7 @@
           "type": "quantitative",
           "title": "Average Income above mean",
           "axis": {"tickCount": 4, "titleFontSize": 20},
-          "scale": {"type": "linear", "domain": [-12500, 12500]}
+          "scale": {"type": "linear", "domain": [-12000, 12000]}
         },
         "tooltip": [
           {"field": "state", "title": "State"},
@@ -98,10 +98,11 @@
           "condition": {
             "selection": "region_highlight",
             "field": "population",
+            "legend":{"format":".1s"},
             "scale": {
               "type": "threshold",
               "domain": [1000000, 2500000, 5000000, 10000000],
-              "range": [330, 600, 900, 1200, 1500]
+              "range": [350, 600, 900, 1200, 1600]
             }
           },
           "value": 0,
@@ -140,7 +141,7 @@
           "type": "quantitative",
           "title": "Average Income above mean",
           "axis": {"tickCount": 4},
-          "scale": {"type": "linear", "domain": [-12500, 12500]}
+          "scale": {"type": "linear", "domain": [-12000, 12000]}
         },
         "text": {"field": "state_abr"},
         "color": {"value": "black"},
