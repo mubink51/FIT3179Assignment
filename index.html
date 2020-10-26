@@ -17,6 +17,11 @@
     body{
        background-color: white;
      }
+    .initial{
+       width: 1400px;    
+       background-color: #f5f3ed;   
+       margin: auto;
+    }
     .page{
        width: 1400px;    
        background-color: #f5f3ed;   
@@ -80,7 +85,7 @@
   </style>
 </head>
 <body>
-<div class = "page">
+<div class = "initial">
   <div class="pure-g">
     <div class = "pure-u-1-1">
       <h1 class="ribbon">
@@ -88,17 +93,19 @@
       </h1>
     </div>
   </div>
+</div>
+<div class = "page">
+
   
   <div class = "pure-g">
-    <div class = "pure-u-1-7">
-      <div><img src="republican.png"></div>
+    <div class = "pure-u-3-24">
+      <div class="vis-container"><img src="republican.png"></div>
     </div>
-    <div class = "pure-u-5-7">
+    <div class = "pure-u-18-24">
       <div id="vis2" class="vis-container"></div>
-    </div>
-  
-    <div class = "pure-u-1-7">
-      <img src="democract.png">
+    </div>  
+    <div class = "pure-u-3-24">
+      <div class="vis-container"><img src="democract.png"></div>
     </div>
   </div>
   <div class = "pure-g">
@@ -138,8 +145,9 @@
     </div>
     <div class = "pure-u-1-2">
       <p> This is some text </p>
-<div id="vis10" class="vis-container"></div>
+      <div id="vis10" class="vis-container"></div>
     </div>
+  </div>
     
 </div>
 <script type="text/javascript">
