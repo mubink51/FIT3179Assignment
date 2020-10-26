@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "height": 400,
-  "width": 600,
+  "width": "container",
   "background": "#f5f3ed",
   "title": {"text": "Political Leaning and Minimum Wage", "fontSize": 26},
   "data": {
