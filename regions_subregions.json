@@ -1,13 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 900,
-  "height": 400,
+  "width": 1000,
+  "height": 800,
   "background": "#f5f3ed",
   "title": {
     "text": "US State Sub Regions",
-    "fontSize": 30,
+    "fontSize": 40,
     "subtitle": "Regions are labelled on map",
-    "subtitleFontSize": 20,
+    "subtitleFontSize": 30,
     "fontWeight": "bold"
   },
   "data": {
@@ -90,9 +90,9 @@
       "mark": {
         "type": "text",
         "text": ["WEST"],
-        "x": 285,
-        "y": 170,
-        "size": 25,
+        "x": 205,
+        "y": 370,
+        "size": 30,
         "angle": 10,
         "color": "darkblue",
         "font": "lucida sans"
@@ -102,9 +102,9 @@
       "mark": {
         "type": "text",
         "text": ["MID WEST"],
-        "x": 495,
-        "y": 130,
-        "size": 25,
+        "x": 585,
+        "y": 330,
+        "size": 30,
         "angle": 0,
         "color": "darkgreen",
         "font": "lucida sans"
@@ -114,9 +114,9 @@
       "mark": {
         "type": "text",
         "text": ["SOUTH"],
-        "x": 505,
-        "y": 280,
-        "size": 25,
+        "x": 635,
+        "y": 530,
+        "size": 30,
         "angle": -12,
         "color": "darkred",
         "font": "lucida sans"
@@ -126,9 +126,9 @@
       "mark": {
         "type": "text",
         "text": ["NORTH EAST"],
-        "x": 700,
-        "y": 110,
-        "size": 25,
+        "x": 890,
+        "y": 245,
+        "size": 29,
         "angle": -38,
         "color": "#b38b0b",
         "font": "lucida sans"
@@ -143,8 +143,8 @@
       "orient": "none",
       "direction": "horizontal",
       "columns": 4,
-      "legendX": 205,
-      "legendY": 420
+      "legendX": 255,
+      "legendY": 730
     },
     "style": {"cell": {"stroke": "transparent"}}
   }
