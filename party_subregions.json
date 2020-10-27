@@ -3,9 +3,9 @@
   "data": {
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Hw2/main/normalised_data.csv"
   },
-  "title": {"text":"Proportion of Party vote by Subregion", "fontSize":25, "subtitle":" ", "subtitlePadding":70, "subtitleFontSize":25},
+  "title": {"text":"Proportion of Party vote by Subregion", "fontSize":25, "subtitle":" ", "subtitlePadding":5, "subtitleFontSize":25},
   "background": "#f5f3ed",
-  "width": 500,
+  "width": 400,
   "height": 400,
   "params": [
     {
@@ -82,5 +82,9 @@
       ]
     }
   ],
-  "config": {}
+  "config": {
+    "axis":{
+      "labelFontSize":12
+    }
+  }
 }
