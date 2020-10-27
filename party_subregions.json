@@ -30,13 +30,13 @@
     {
       "mark": "bar",
       "encoding": {
-        "y": {
+        "x": {
           "aggregate": "sum",
           "field": "vote",
           "stack": "normalize",
           "title": "Proportion of Vote"
         },
-        "x": {
+        "y": {
           "field": "Region",
           "sort": [
             "South East Central",
@@ -60,7 +60,7 @@
     },
     {
       "data": {"values": [{}]},
-      "encoding": {"y": {"datum": 0.5}},
+      "encoding": {"x": {"datum": 0.5}},
       "layer": [
         {
           "mark": "rule",
@@ -71,8 +71,8 @@
             "type": "text",
             "align": "right",
             "baseline": "bottom",
-            "dx": 60,
-            "dy": 5,
+            "dx": 25,
+            "dy": -200,
             "x": "width",
             "text": "Majority",
             "size": 14
