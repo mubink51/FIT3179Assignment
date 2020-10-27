@@ -4,14 +4,18 @@
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/final.csv"
   },
   "background": "#f5f3ed",
-  "title": {"text": "Distrubtion of Income Facetted by Party", "fontSize": 30},
+  "title": {"text": "Distrubtion of Income by Party", "fontSize": 30},
   
-  "vconcat":[{"mark": {"type": "area", "interpolate": "cardinal"},
+  "vconcat":[
+    
+    {
+      "layer":[
+      {"mark": {"type": "area", "interpolate": "cardinal"},
   "transform": [
     {"filter":"datum.Winning_Party == 'Republicans'"}
   ],
   
-  "width": "container",
+  "width": 433,
   "encoding": {
     "x": {
       "field": "AverageHouseholdIncome",
@@ -25,31 +29,31 @@
       "scale": {"range": ["#e31212"]},
       "legend": null
     },
-    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false}},
-    "facet": {"field": "Winning_Party", "columns": 1, "title": ""}
+    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false}}
     
-  }},
+    
+  }}]},
   { 
-  "mark": {"type": "area", "interpolate": "cardinal"},
+  "layer":[{"mark": {"type": "area", "interpolate": "cardinal"},
   "transform": [
     {"filter":"datum.Winning_Party == 'Democrats'"}
   ],
-  "width":  "container",
+  "width":  433,
   "encoding": {
     "x": {
       "field": "AverageHouseholdIncome",
       "bin": true,
       "title": "Average Income $",
       "scale":{"domain":[60000,140000]},
-      "axis":{"tickCount":7, "values":[60000,70000,80000,90000,100000,110000,120000,130000,135000], "grid": true}
+      "axis":{"tickCount":7, "values":[60000,80000,100000,120000,135000], "grid": true}
     },
     "color": {
       "value":"#125be3"
 
     },
-    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false}},
-    "facet": {"field": "Winning_Party", "columns": 1, "title": ""}
-  }}],
+    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false}}
+    
+  }}]}],
   
   "config": {
   "axis":{
