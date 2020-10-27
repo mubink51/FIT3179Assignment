@@ -5,136 +5,120 @@
   },
   "background": "#f5f3ed",
   "title": {"text": "Distrubtion of Income by Party", "fontSize": 30},
-  "vconcat": [
+  
+  "vconcat":[
+    
     {
-      "layer": [
-        {
-          "mark": {"type": "area", "interpolate": "cardinal"},
-          "transform": [{"filter": "datum.Winning_Party == 'Republicans'"}],
-          "width": 433,
-          "encoding": {
-            "x": {
-              "field": "AverageHouseholdIncome",
-              "bin": true,
-              "title": "Average Income $",
-              "scale": {"domain": [60000, 140000]},
-              "axis": {
-                "ticks": false,
-                "labels": false,
-                "title": " ",
-                "values": [60000, 80000, 100000, 120000, 135000],
-                "grid": true
-              }
-            },
-            "color": {
-              "field": "Winning_Party",
-              "scale": {"range": ["#e31212"]},
-              "legend": null
-            },
-            "y": {
-              "aggregate": "count",
-              "title": "Number Of States",
-              "axis": {"grid": false}
-            }
-          }
-        },
-        {
-          "mark": {
-            "type": "text",
-            "text": ["Average Republican Household Income", "$86,662"],
-            "size": 14,
-            "width": 100,
-            "fontWeight": 600
-          },
-          "encoding": {
-            "color": {"value": "black"},
-            "x": {"value": 300},
-            "y": {"value": 25}
-          }
-        },
-        {
-          "data": {"values": [{}]},
-          "mark": {"type": "rule", "color": "silver", "size": 3},
-          "encoding": {
-            "x": {
-              "value": 300,
-              "type": "quantitative",
-              "scale": {"domain": [0, 100]}
-            },
-            "y": {
-              "value": 60,
-              "type": "quantitative",
-              "scale": {"domain": [0, 100]}
-            },
-            "x2": {"value": 150},
-            "y2": {"value": 100}
-          }
-        }
-      ]
-    },
-    {
-      "layer": [
-        {
-          "mark": {"type": "area", "interpolate": "cardinal"},
-          "transform": [{"filter": "datum.Winning_Party == 'Democrats'"}],
-          "width": 433,
-          "encoding": {
-            "x": {
-              "field": "AverageHouseholdIncome",
-              "bin": true,
-              "title": "Average Income $",
-              "scale": {"domain": [60000, 140000]},
-              "axis": {
-                "tickCount": 7,
-                "values": [60000, 80000, 100000, 120000, 135000],
-                "grid": true
-              }
-            },
-            "color": {"value": "#125be3"},
-            "y": {
-              "aggregate": "count",
-              "title": "Number Of States",
-              "axis": {"grid": false}
-            }
-          }
-        },
-        {
-          "mark": {
-            "type": "text",
-            "text": ["Average Democratic Household Income", "$107,413"],
-            "size": 14,
-            "width": 100,
-            "fontWeight": 600
-          },
-          "encoding": {
-            "color": {"value": "black"},
-            "x": {"value": 150},
-            "y": {"value": 25}
-          }
-        },
-        {
-          "data": {"values": [{}]},
-          "mark": {"type": "rule", "color": "silver", "size": 3},
-          "encoding": {
-            "x": {
-              "value": 155,
-              "type": "quantitative",
-              "scale": {"domain": [0, 100]}
-            },
-            "y": {
-              "value": 60,
-              "type": "quantitative",
-              "scale": {"domain": [0, 100]}
-            },
-            "x2": {"value": 265},
-            "y2": {"value": 100}
-          }
-        }
-      ]
-    }
+      "layer":[
+      {"mark": {"type": "area", "interpolate": "cardinal"},
+  "transform": [
+    {"filter":"datum.Winning_Party == 'Republicans'"}
   ],
+  
+  "width": "container",
+  "encoding": {
+    "x": {
+      "field": "AverageHouseholdIncome",
+      "bin": true,
+      "title": "Average Income $",
+      "scale":{"domain":[60000,140000]}
+      ,"axis":{"ticks":false, "labels":false, "title":" ","values":[60000,80000,100000,120000,135000], "grid": true}
+    },
+    "color": {
+      "field": "Winning_Party",
+      "scale": {"range": ["#e31212"]},
+      "legend": null
+    },
+    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false}}
+    
+    
+  }
+  }
+  ,
+  {"mark":{"type":"text", "text":["Average Republican Household Income","$86,662"], "size":15,
+  "width":100, "fontWeight":"normal", "font":"arial"},
+  "encoding":{
+    "color":{"value":"black"},
+    "x":{"value":300},
+    "y":{"value":25}
+  }},
+  {  "data": {"values": [{}]},
+  "mark": {
+    "type": "rule",
+    "color":"silver",
+    "size":3
+  },
+  "encoding": {
+    "x": {
+      "value":300,
+      "type": "quantitative",
+      "scale": {"domain": [0, 100]}
+    },
+    "y": {
+      "value":60,
+      "type": "quantitative",
+      "scale": {"domain": [0, 100]}
+    },
+    "x2": {"value":150},
+    "y2": {"value":100}
+  }}
+  
+  ]},
+  { 
+  "layer":[{"mark": {"type": "area", "interpolate": "cardinal"},
+  "transform": [
+    {"filter":"datum.Winning_Party == 'Democrats'"}
+  ],
+  "width":  "container",
+  "encoding": {
+    "x": {
+      "field": "AverageHouseholdIncome",
+      "bin": true,
+      "title": "Average Income $",
+      "scale":{"domain":[60000,140000]},
+      "axis":{"tickCount":7, "values":[60000,80000,100000,120000,135000], "grid": true}
+    },
+    "color": {
+      "value":"#125be3"
+
+    },
+    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false}}
+    
+  }}, {"mark":{"type":"text", "text":["Average Democratic Household Income","$107,413"], "size":14,
+  "width":100, "fontWeight":"normal", "font":"arial"},
+  "encoding":{
+    "color":{"value":"black"},
+    "x":{"value":150},
+    "y":{"value":25}
+  }},
+  {  "data": {"values": [{}]},
+  "mark": {
+    "type": "rule",
+    "color":"silver",
+    "size":3
+  },
+  "encoding": {
+    "x": {
+      "value":155,
+      "type": "quantitative",
+      "scale": {"domain": [0, 100]}
+    },
+    "y": {
+      "value":60,
+      "type": "quantitative",
+      "scale": {"domain": [0, 100]}
+    },
+    "x2": {"value":265},
+    "y2": {"value":100}
+  }}]}],
+  
   "config": {
-    "axis": {"labelFontSize": 12, "titleFontSize": 14},
-    "axisX": {"minExtent": -5}
+  "axis":{
+      "labelFontSize":12,
+      "titleFontSize":14
+    },
+    "axisX": {
+      "minExtent": -5
+    }
   }
 }
