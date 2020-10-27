@@ -1,0 +1,103 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "height": 400,
+  "width": "container",
+  "background": "#f5f3ed",
+  "title": {"text": "Political Leaning and Cost of Living", "fontSize": 26},
+  "data": {
+    "url": "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/final.csv"
+  },
+  "layer": [
+    {
+      "mark": {"type": "circle", "size": 70, "filled": true},
+      "encoding": {
+        "x": {
+          "field": "adjmov",
+          "type": "quantitative",
+          "title": " <-- More Democratic                                                                                                 More Republican -->",
+          "axis": {"labels": false, "ticks": false}
+        },
+        "y": {
+          "field": "Cost_Of_Living",
+          "type": "quantitative",
+          "title": "Relative cost of a $100 item",
+          "scale": {"domain": [0, 200]}
+        },
+        "color": {
+          "field": "Winning_Party",
+          "scale": {"range": ["#125be3", "#e31212"]},
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "adjmov"},
+          {"field": "state"},
+          {
+            "field": "Cost_Of_Living",
+            "format": ".2f",
+            "title": "Value of $100"
+          },
+          {"field": "MOV", "title": "Size of Republican Majority"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "firebrick"},
+      "transform": [{"regression": "Cost_Of_Living", "on": "adjmov"}],
+      "encoding": {
+        "x": {"field": "adjmov", "type": "quantitative"},
+        "y": {"field": "Cost_Of_Living", "type": "quantitative"}
+      }
+    },
+    {
+      "transform": [
+        {"regression": "Cost_Of_Living", "on": "adjmov", "params": true},
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5,
+        "size": 15
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    },
+    {
+      "data": {"values": [{}]},
+      "layer": [
+        {
+          "mark": {"type": "rule", "strokeDash": [8, 8]},
+          "encoding": {
+            "x": {"datum": 0.87},
+            "size": {"value": 1},
+            "color": {"value": "gray"}
+          }
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "text": "Republican States",
+        "x": 400,
+        "y": 350,
+        "color": "#e31212",
+        "size": 14,
+        "fontWeight": "bolder"
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "text": "Democratic States",
+        "x": 160,
+        "y": 350,
+        "color": "#125be3",
+        "size": 14,
+        "fontWeight": "bolder"
+      }
+    }
+  ],
+  "config": {"style": {"cell": {"stroke": "transparent"}}}
+}
