@@ -139,9 +139,15 @@
       <img src = "democract.png" style="width: 153px; height: 155px">
     </div>
   </div>
+
   <div class = "pure-g">
-	<div class = "pure-u-1-1 subdiv"> 
+	<div class = "pure-u-1-2 subdiv"> 
 		<h2> THIS IS A SUBDIVIDER </h2>
+<p> On the left we see this. </p>
+        </div>
+<div class = "pure-u-1-2 subdiv"> 
+		<h2> THIS IS A SUBDIVIDER </h2>
+<p> On the right we see that. </p>
         </div>
   </div>
   <div class = "pure-g">
@@ -161,11 +167,11 @@
         </div>
   </div>
   <div class = "pure-g">
-    <div class = "pure-u-1-6" style="width: 203px; height: 105px">
+    <div class = "pure-u-1-6" style="width: 183px; height: 105px">
       <div class = "vis-container"></div>
     </div>
                
-    <div class = "pure-u-1-1" style="width: 1000px">
+    <div class = "pure-u-1-1" style="width: 900px">
       <div id="vis4" class="vis-container" style="width: 900px"></div>
     </div>  
     <div class = "pure-u-1-6" style="width: 103px; height: 105px">
@@ -219,7 +225,7 @@
 	<div class = "pure-u-2-24">
       <div class="vis-container"></div>
     </div>
-    <div class = "pure-u-11-24">
+    <div class = "pure-u-11-24" style="width: 600px">
       <div id="vis10" class="vis-container"></div>
     </div>
   </div>
@@ -256,9 +262,9 @@
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
-  var univspec10 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/Political_Leaning_Universities.json";
+  var colspec10 = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/political_cost.json";
   
-  vegaEmbed('#vis10', univspec10, {"actions": false}).then(function(result) {
+  vegaEmbed('#vis10', colspec10, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
