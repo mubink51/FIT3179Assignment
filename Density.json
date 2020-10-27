@@ -4,6 +4,7 @@
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/final.csv"
   },
   "background": "#f5f3ed",
+  "title": {"text": "Distrubtion of Income Facetted by Party", "fontSize": 30},
   "width": "container",
   "mark": {"type": "area", "interpolate": "cardinal"},
   "encoding": {
