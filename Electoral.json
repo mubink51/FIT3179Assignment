@@ -17,7 +17,7 @@
       "bind": {
         "input": "radio",
         "options": ["WP", "MOV"],
-        "labels": ["    Winning Party    ", "     Margin Of Victory"],
+        "labels": ["    Winning Party    ", "&nbsp;&nbsp;Margin Of Victory"],
         "name": "Show: "
       }
     },
