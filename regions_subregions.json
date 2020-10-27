@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 1000,
-  "height": 800,
+  "height": 700,
   "background": "#f5f3ed",
   "title": {
     "text": "US State Sub Regions",
@@ -30,6 +30,12 @@
         "region_highlight": {
           "type": "multi",
           "fields": ["Region"],
+          "bind": "legend",
+          "on": "mouseover"
+        },
+        "subregion_highlight": {
+          "type": "single",
+          "fields": ["Specific_Region"],
           "bind": "legend",
           "on": "mouseover"
         }
@@ -75,14 +81,21 @@
           "value": null
         },
         "opacity": {
-          "condition": {"selection": "state_highlight", "value": 0.9},
+          "condition": {"selection": "subregion_highlight", "value": 0.9},
           "value": 0.25
         },
+        "stroke":{
+          "condition":{"selection":"state_highlight", "value":"white"},
+          "value":null
+          
+        },
         "tooltip": [
-          {"field": "Region"},
+          {"field":"state", "title":"State"},
           {"field": "Specific_Region", "title": "Sub Region"},
+          {"field": "Region"},
           {"field": "population", "format": ","},
           {"field": "Winning_Party", "title": "2016 Elected party"}
+          
         ]
       }
     },
@@ -91,7 +104,7 @@
         "type": "text",
         "text": ["WEST"],
         "x": 205,
-        "y": 370,
+        "y": 270,
         "size": 30,
         "angle": 10,
         "color": "darkblue",
@@ -103,7 +116,7 @@
         "type": "text",
         "text": ["MID WEST"],
         "x": 585,
-        "y": 330,
+        "y": 270,
         "size": 30,
         "angle": 0,
         "color": "darkgreen",
@@ -115,7 +128,7 @@
         "type": "text",
         "text": ["SOUTH"],
         "x": 635,
-        "y": 530,
+        "y": 480,
         "size": 30,
         "angle": -12,
         "color": "darkred",
@@ -126,8 +139,8 @@
       "mark": {
         "type": "text",
         "text": ["NORTH EAST"],
-        "x": 890,
-        "y": 245,
+        "x": 880,
+        "y": 210,
         "size": 29,
         "angle": -38,
         "color": "#b38b0b",
@@ -144,7 +157,7 @@
       "direction": "horizontal",
       "columns": 4,
       "legendX": 255,
-      "legendY": 730
+      "legendY": 680
     },
     "style": {"cell": {"stroke": "transparent"}}
   }
