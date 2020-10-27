@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 600,
+  "width": 900,
   "height": 400,
   "background": "#f5f3ed",
   "title": {
@@ -90,7 +90,7 @@
       "mark": {
         "type": "text",
         "text": ["WEST"],
-        "x": 135,
+        "x": 285,
         "y": 170,
         "size": 25,
         "angle": 10,
@@ -102,7 +102,7 @@
       "mark": {
         "type": "text",
         "text": ["MID WEST"],
-        "x": 345,
+        "x": 495,
         "y": 130,
         "size": 25,
         "angle": 0,
@@ -114,7 +114,7 @@
       "mark": {
         "type": "text",
         "text": ["SOUTH"],
-        "x": 385,
+        "x": 505,
         "y": 280,
         "size": 25,
         "angle": -12,
@@ -126,7 +126,7 @@
       "mark": {
         "type": "text",
         "text": ["NORTH EAST"],
-        "x": 530,
+        "x": 700,
         "y": 110,
         "size": 25,
         "angle": -38,
@@ -143,8 +143,8 @@
       "orient": "none",
       "direction": "horizontal",
       "columns": 4,
-      "legendX": 70,
-      "legendY": 400
+      "legendX": 205,
+      "legendY": 420
     },
     "style": {"cell": {"stroke": "transparent"}}
   }
