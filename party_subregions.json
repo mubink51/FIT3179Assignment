@@ -3,6 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Hw2/main/normalised_data.csv"
   },
+  "title":{"text":"Proportion of Party Vote by Subregion", "fontSize":20},
   "background": "#f5f3ed",
   "width": 500,
   "height": 400,
