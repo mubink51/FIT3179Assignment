@@ -35,12 +35,12 @@
   }
   }
   ,
-  {"mark":{"type":"text", "text":["Average Republican Household Income","$86,662"], "size":15,
+  {"mark":{"type":"text", "text":["Average Republican Household ","Income $86,662"], "size":19,
   "width":100, "fontWeight":"normal", "font":"arial"},
   "encoding":{
     "color":{"value":"black"},
-    "x":{"value":300},
-    "y":{"value":25}
+    "x":{"value":330},
+    "y":{"value":14}
   }},
   {  "data": {"values": [{}]},
   "mark": {
@@ -84,12 +84,12 @@
     },
     "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false}}
     
-  }}, {"mark":{"type":"text", "text":["Average Democratic Household Income","$107,413"], "size":14,
+  }}, {"mark":{"type":"text", "text":["Average Democratic Household", "Income $107,413"], "size":19,
   "width":100, "fontWeight":"normal", "font":"arial"},
   "encoding":{
     "color":{"value":"black"},
-    "x":{"value":150},
-    "y":{"value":25}
+    "x":{"value":137},
+    "y":{"value":10}
   }},
   {  "data": {"values": [{}]},
   "mark": {
