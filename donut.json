@@ -139,7 +139,7 @@
         "color": {
           "field": "category",
           "type": "nominal",
-          "legend": {"title": "Party"},
+          "legend": null,
           "scale": {"range": ["#125be3", "#e31212"]}
         },
         "opacity": {
@@ -172,5 +172,7 @@
     }
   ],
   "view": {"stroke": null},
-  "config": {}
-} 
+  "config": {
+
+  }
+}
