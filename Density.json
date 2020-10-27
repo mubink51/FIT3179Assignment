@@ -16,10 +16,15 @@
     "color": {
       "field": "Winning_Party",
       "scale": {"range": ["#125be3", "#e31212"]},
-      "legend": {"title": "Party "}
+      "legend": null
     },
     "y": {"aggregate": "count", "title": "Number Of States"},
     "facet": {"field": "Winning_Party", "columns": 1, "title": ""}
   },
-  "config": {}
+  "config": {
+  "axis":{
+      "labelFontSize":12,
+      "titleFontSize":14
+    }
+  }
 }
