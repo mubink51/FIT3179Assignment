@@ -41,17 +41,13 @@
   "layer": [
     {
       "selection": {
-        "region_highlight": {
-          "type": "multi",
-          "fields": ["Region"],
-          "bind": "legend",
-          "on": "mouseover"
-        },
+
         "state_highlight": {
           "type": "multi",
           "fields": ["state"],
           "bind": "legend",
-          "on": "mouseover"
+          "on": "mouseover",
+          "empty": "none"
         }
       },
       "mark": "circle",
@@ -82,8 +78,7 @@
           {"field": "Specific_Region", "title": "Sub Region"}
         ],
         "size": {
-          "condition": {
-            "selection": "region_highlight",
+          
             "field": "population",
             "legend": {"format": ".1s"},
             "scale": {
@@ -91,9 +86,7 @@
               "domain": [1000000, 2500000, 5000000, 10000000],
               "range": [350, 600, 900, 1200, 1600]
             }
-          },
-          "value": 0,
-          "legend": {"format": ".1s"}
+
         },
         "color": {
           "field": "Winning_Party",
@@ -105,8 +98,8 @@
           "title":"Party"
         },
         "opacity": {
-          "condition": {"selection": "state_highlight", "value": 0.75},
-          "value": 0.2
+          "condition": {"selection": "state_highlight", "value": 0.9},
+          "value": 0.75
         }
       }
     },
@@ -134,8 +127,8 @@
         "text": {"field": "state_abr"},
         "color": {"value": "black"},
         "opacity": {
-          "condition": {"selection": "region_highlight", "value": 0.8},
-          "value": 0
+
+          "value": 0.8
         }
       }
     }
