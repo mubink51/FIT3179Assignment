@@ -27,16 +27,6 @@
         "step": 100000,
         "name": "Minimum Population"
       }
-    },
-    {
-      "name": "average_age_param",
-      "value": 32,
-      "bind": {
-        "input": "range",
-        "min": 32,
-        "max": 42,
-        "name": "Minimum Avg Age"
-      }
     }
   ],
   "transform": [
@@ -44,7 +34,7 @@
       "filter": "party_selection == null || datum.Winning_Party == party_selection"
     },
     {"filter": "datum.population > population_above"},
-    {"filter": "datum.Average_Age > average_age_param"},
+  
     {"calculate": "datum.AverageHouseholdIncome-95000", "as": "avg_income"}
   ],
   "mark": "circle",
@@ -106,12 +96,13 @@
           "legend": {"format": ".1s"}
         },
         "color": {
-          "field": "Region",
+          "field": "Winning_Party",
           "type": "nominal",
           "scale": {
-            "domain": ["North East", "South", "Mid West", "West"],
-            "range": ["#decbe4", "#1f78b4", "#fbb4ae", "#33a02c"]
-          }
+            "domain": ["Republicans", "Democrats"],
+            "range": ["#e31212", "#1f78b4"]
+          },
+          "title":"Party"
         },
         "opacity": {
           "condition": {"selection": "state_highlight", "value": 0.75},
