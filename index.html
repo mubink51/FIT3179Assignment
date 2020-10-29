@@ -6,19 +6,29 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
   <!-- Import vega-embed -->
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-  <!-- Import pure.css -->
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/base-min.css">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-min.css">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
   
 
   <style>
-    
 
+	select {
+background-color: #f5f3ed; 
+}
     .initial{
        width: 1500px;    
 	text-align: center;
+	background-color: #f5f3ed; 
+	margin: auto;
       
     }
+	.blue{
+	color: blue;
+}
+	.red{
+	color: red;
+}
 	input[type=radio] {
   	padding 50px;
 	}
@@ -28,6 +38,7 @@
        margin: auto;
        padding: 50px;
        padding-top: 35px;
+	font-family: Verdana, sans-serif;
     }
     p {
       font-size: 15px;
@@ -54,9 +65,8 @@
 	font: Optima;
     }
     .ribbon {
-     font-size: 60px;
+     font-size: 64px;
     /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-
     width: 100%;
     
     position: relative;
@@ -102,8 +112,8 @@
 }
 
      body{
-       background-color: white;
-       font-family: Verdana, sans-serif;
+       background-color: #faf9f7;
+       
      }
 .subdiv{
 	text-align: center;
@@ -113,14 +123,14 @@
   </style>
 </head>
 <body>
- <div class = "page">
+ <div class = "initial">
 <h1 class="ribbon">
 
 
  
-        <strong class="ribbon-content">A TALE OF 2 STATES </strong>
+        <strong class="ribbon-content" >A TALE OF 2 STATES </strong>
       </h1>
-<h2 style="text-align: center; font-size: 30px;"> What would America look like if we split it in half?</h2>
+<h2 style="text-align: center; font-size: 40px; text-transform: uppercase; font-weight: bold;"> What would America look like if we <span class = 'blue'>split it</span> <span class = 'red'>in half?</span></h2>
 
     
 	</div>
@@ -167,7 +177,7 @@
         </div>
   </div>
   <div class = "pure-g">
-    <div class = "pure-u-1-6" style="width: 183px; height: 105px">
+    <div class = "pure-u-1-6" style="width: 299px; height: 105px">
       <div class = "vis-container"></div>
     </div>
                
