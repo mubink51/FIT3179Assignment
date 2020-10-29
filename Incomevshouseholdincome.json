@@ -57,14 +57,14 @@
           "field": "Average_Age",
           "type": "quantitative",
           "title": "Average Age",
-          "axis": {"tickCount": 5, "titleFontSize": 20},
+          "axis": {"tickCount": 5, "titleFontSize": 18},
           "scale": {"type": "linear", "domain": [32, 43]}
         },
         "y": {
           "field": "avg_income",
           "type": "quantitative",
           "title": "Average Household Income above mean",
-          "axis": {"tickCount": 4, "titleFontSize": 20},
+          "axis": {"tickCount": 4, "titleFontSize": 18},
           "scale": {"type": "linear", "domain": [-40000, 40000]}
         },
         "tooltip": [
@@ -134,5 +134,12 @@
       }
     }
   ],
-  "config": {}
+  "config": {
+    "style": {"cell": {"stroke": "transparent"}},
+    "axis": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
+  "legend": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
+  "header": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
+  "mark": {"font": "Lucida Sans Unicode"},
+  "title": {"font": "Lucida Sans Unicode", "subtitleFont": "Lucida Sans Unicode"}
+    }
 }
