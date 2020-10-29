@@ -4,7 +4,7 @@
   "width": "container",
   "background": "#f5f3ed",
   "title": {
-    "text": "Political Leaning and Higher Education Levels",
+    "text": "Political Leaning and Higher Education",
     "fontSize": 25
   },
   "data": {
@@ -18,7 +18,7 @@
         "x": {
           "field": "adjmov",
           "type": "quantitative",
-          "title": " <-- More Democratic                                                                                                   More Republican -->",
+          "title": " <-- More Democratic                                                                                               More Republican -->",
           "axis": {"labels": false, "ticks": false}
         },
         "y": {
@@ -113,7 +113,7 @@
     "axis": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
   "legend": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
   "header": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
-  "mark": {"font": "arial"},
+  "mark": {"font": "Lucida Sans Unicode"},
   "title": {"font": "Lucida Sans Unicode", "subtitleFont": "Lucida Sans Unicode"}
     }
 }
