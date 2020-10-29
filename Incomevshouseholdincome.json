@@ -52,6 +52,7 @@
       },
       "mark": "circle",
       "encoding": {
+        "order":{"field":"population", "sort":"ascending"},
         "x": {
           "field": "Average_Age",
           "type": "quantitative",
@@ -83,8 +84,8 @@
             "legend": {"format": ".1s"},
             "scale": {
               "type": "threshold",
-              "domain": [1000000, 2500000, 5000000, 10000000],
-              "range": [350, 600, 900, 1200, 1600]
+              "domain": [1000000, 5000000, 10000000],
+              "range": [350, 700, 1250, 2000]
             }
 
         },
