@@ -3,7 +3,7 @@
   "height": 400,
   "width": "container",
   "background": "#f5f3ed",
-  "title": {"text": "Political Leaning and Cost of Living", "fontSize": 26},
+  "title": {"text": "Political Leaning and Cost of Living", "fontSize": 25},
   "data": {
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/final.csv"
   },
@@ -29,12 +29,12 @@
           "legend": null
         },
         "tooltip": [
-          {"field": "adjmov"},
-          {"field": "state"},
+         
+          {"field": "state", "title":"State"},
           {
             "field": "Cost_Of_Living",
-            "format": ".2f",
-            "title": "Value of $100"
+            "format": "$",
+            "title": "Cost of a $100 item"
           },
           {"field": "MOV", "title": "Size of Republican Majority"}
         ]
@@ -58,8 +58,8 @@
         "color": "firebrick",
         "x": "width",
         "align": "right",
-        "y": -5,
-        "size": 15
+        "y": 10,
+        "size": 18
       },
       "encoding": {"text": {"type": "nominal", "field": "R2"}}
     },
@@ -76,7 +76,7 @@
         }
       ]
     },
-    {
+    { "data":[{}],
       "mark": {
         "type": "text",
         "text": "Republican States",
@@ -87,11 +87,11 @@
         "fontWeight": "bolder"
       }
     },
-    {
+    {"data":[{}],
       "mark": {
         "type": "text",
         "text": "Democratic States",
-        "x": 160,
+        "x": 260,
         "y": 350,
         "color": "#125be3",
         "size": 14,
