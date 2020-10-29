@@ -45,7 +45,7 @@
   {"data": {"values": [{}]},"mark":{"type":"text", "size":19,
   "width":100, "fontWeight":"normal", "font":"arial"},
   "encoding":{
-    "text":{"condition": {"test": "Income_above < 100000 ", "value":["Average Republican ","Household Income $86,662"]}},
+    "text":{"condition": {"test": "Income_above < 101000 ", "value":["Average Republican ","Household Income $86,662"]}},
     "color":{"value":"black"},
     "x":{"value":300},
     "y":{"value":14}
@@ -85,10 +85,15 @@
   "config": {
   "axis":{
       "labelFontSize":12,
-      "titleFontSize":14
+      "titleFontSize":14,
+    "labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"
     },
     "axisX": {
       "minExtent": -5
-    }
+    },
+     "legend": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
+  "header": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
+  "mark": {"font": "Lucida Sans Unicode"},
+  "title": {"font": "Lucida Sans Unicode", "subtitleFont": "Lucida Sans Unicode"}
   }
 }
