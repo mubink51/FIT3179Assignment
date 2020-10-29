@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": "container",
+  "width": 800,
   "height": 650,
   "background": "#f5f3ed",
   "title": {"text": "US Election Results 1996-2016", "fontSize": 34},
