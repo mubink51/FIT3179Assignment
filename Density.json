@@ -76,7 +76,7 @@
   }}, {"data": {"values": [{}]},"mark":{"type":"text", "size":19,
   "width":100, "fontWeight":"normal", "font":"arial"},
   "encoding":{
-    "text":{"condition": {"test": "Income_above < 131000 ", "value":["Average Democratic Household", "Income $107,413"]}},
+    "text":{"condition": {"test": "Income_above < 134500 ", "value":["Average Democratic Household", "Income $107,413"]}},
     "color":{"value":"black"},
     "x":{"value":139},
     "y":{"value":12}
