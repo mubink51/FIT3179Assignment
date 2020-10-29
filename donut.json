@@ -198,6 +198,11 @@
   ],
   "view": {"stroke": null},
   "config": {
-
-  }
+    "style": {"cell": {"stroke": "transparent"}},
+    "axis": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
+  "legend": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
+  "header": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
+  "mark": {"font": "Lucida Sans Unicode"},
+  "title": {"font": "Lucida Sans Unicode", "subtitleFont": "Lucida Sans Unicode"}
+    }
 }
