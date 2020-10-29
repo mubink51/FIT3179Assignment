@@ -22,7 +22,8 @@
           "field": "Adult_Obesity_100",
           "type": "quantitative",
           "title": "Obesity levels %",
-          "scale": {"domain": [0, 45]}
+          "scale": {"domain": [0, 45]},
+          "axis": {"titleFontSize": 20}
         },
         "color": {
           "field": "Winning_Party",
