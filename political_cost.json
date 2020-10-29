@@ -21,7 +21,8 @@
           "field": "Cost_Of_Living",
           "type": "quantitative",
           "title": "Relative cost of a $100 item",
-          "scale": {"domain": [0, 200]}
+          "scale": {"domain": [0, 200]},
+          "axis": {"titleFontSize": 20}
         },
         "color": {
           "field": "Winning_Party",
