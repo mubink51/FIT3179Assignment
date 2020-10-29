@@ -3,7 +3,7 @@
   "width": "container",
   "height": 650,
   "background": "#f5f3ed",
-  "title": {"text": "US Election Results 1996-2016", "fontSize": 40},
+  "title": {"text": "US Election Results 1996-2016", "fontSize": 34},
   "data": {
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Hw2/main/ne_110m_admin_1_states_provinces%20(1).json",
     "format": {
