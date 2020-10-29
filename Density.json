@@ -41,32 +41,13 @@
   }
   }
   ,
-  {"data": {"values": [{}]},"mark":{"type":"text", "text":["Average Republican Household ","Income $86,662"], "size":19,
+  {"data": {"values": [{}]},"mark":{"type":"text", "size":19,
   "width":100, "fontWeight":"normal", "font":"arial"},
   "encoding":{
+    "text":{"condition": {"test": "Income_above < 100000 ", "value":["Average Republican ","Household Income $86,662"]}},
     "color":{"value":"black"},
     "x":{"value":330},
     "y":{"value":14}
-  }},
-  {  "data": {"values": [{}]},
-  "mark": {
-    "type": "rule",
-    "color":"silver",
-    "size":3
-  },
-  "encoding": {
-    "x": {
-      "value":300,
-      "type": "quantitative",
-      "scale": {"domain": [0, 100]}
-    },
-    "y": {
-      "value":60,
-      "type": "quantitative",
-      "scale": {"domain": [0, 100]}
-    },
-    "x2": {"value":160},
-    "y2": {"value":100}
   }}
   
   ]},
@@ -90,32 +71,13 @@
     },
     "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false}, "scale":{"domain":[0,14]}}
     
-  }}, {"data": {"values": [{}]},"mark":{"type":"text", "text":["Average Democratic Household", "Income $107,413"], "size":19,
+  }}, {"data": {"values": [{}]},"mark":{"type":"text", "size":19,
   "width":100, "fontWeight":"normal", "font":"arial"},
   "encoding":{
+    "text":{"condition": {"test": "Income_above < 120000 ", "value":["Average Democratic Household", "Income $107,413"]}},
     "color":{"value":"black"},
     "x":{"value":139},
     "y":{"value":12}
-  }},
-  {  "data": {"values": [{}]},
-  "mark": {
-    "type": "rule",
-    "color":"silver",
-    "size":3
-  },
-  "encoding": {
-    "x": {
-      "value":155,
-      "type": "quantitative",
-      "scale": {"domain": [0, 100]}
-    },
-    "y": {
-      "value":55,
-      "type": "quantitative",
-      "scale": {"domain": [0, 100]}
-    },
-    "x2": {"value":265},
-    "y2": {"value":100}
   }}]}],
   
   "config": {
