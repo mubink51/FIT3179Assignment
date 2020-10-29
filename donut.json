@@ -13,7 +13,8 @@
         "year": "2016",
         "proportion": "43.41%",
         "proportion2": "",
-        "proportion3": "43.41%"
+        "proportion3": "43.41%",
+        "proportion4": "51.11%"
       },
       {
         "category": "Republican",
@@ -22,6 +23,8 @@
         "proportion2": "56.59%",
         "proportion": "",
         "proportion3": "56.59%"
+        ,
+        "proportion4": "48.89%"
       },
       {
         "category": "Democrat",
@@ -30,6 +33,8 @@
         "proportion": "63.52%",
         "proportion2": "",
         "proportion3": "63.52%"
+        ,
+        "proportion4": "51.97%"
       },
       {
         "category": "Republican",
@@ -38,6 +43,8 @@
         "proportion2": "36.48%",
         "proportion": "",
         "proportion3": "36.48%"
+        ,
+        "proportion4": "48.04%"
       },
       {
         "category": "Democrat",
@@ -46,6 +53,8 @@
         "proportion": "71.02%",
         "proportion2": "",
         "proportion3": "71.02%"
+        ,
+        "proportion4": "53.69%"
       },
       {
         "category": "Republican",
@@ -54,6 +63,8 @@
         "proportion2": "28.98%",
         "proportion": "",
         "proportion3": "28.98%"
+        ,
+        "proportion4": "46.31%"
       },
       {
         "category": "Democrat",
@@ -62,6 +73,8 @@
         "proportion": "48.23%",
         "proportion2": "",
         "proportion3": "48.23%"
+        ,
+        "proportion4": "48.76%"
       },
       {
         "category": "Republican",
@@ -70,6 +83,8 @@
         "proportion2": "51.77%",
         "proportion": "",
         "proportion3": "51.77%"
+        ,
+         "proportion4": "51.24%"
       },
       {
         "category": "Democrat",
@@ -78,6 +93,8 @@
         "proportion": "55.69%",
         "proportion2": "",
         "proportion3": "55.69%"
+        ,
+        "proportion4": "50.27%"
       },
       {
         "category": "Republican",
@@ -86,6 +103,8 @@
         "proportion2": "44.31%",
         "proportion": "",
         "proportion3": "44.31%"
+        ,
+        "proportion4": "49.73%"
       },
       {
         "category": "Democrat",
@@ -94,6 +113,8 @@
         "proportion": "71.65%",
         "proportion2": "",
         "proportion3": "71.65%"
+        ,
+        "proportion4": "54.74%"
       },
       {
         "category": "Republican",
@@ -102,6 +123,8 @@
         "proportion2": "28.35%",
         "proportion": "",
         "proportion3": "28.35%"
+        ,
+        "proportion5": "45.26%"
       }
     ]
   },
@@ -134,7 +157,9 @@
         "theta": {"field": "value", "type": "quantitative"},
         "tooltip": [
           {"field": "category", "title": "Party"},
-          {"field": "proportion3", "title": "Proportion of Population"}
+          {"field": "proportion3", "title": "Proportion of Population"},
+          {"field":"value", "title":"Total Population", "format":"1s"},
+          {"field":"proportion4","title":"Proportion of Popular Vote"}
         ],
         "color": {
           "field": "category",
