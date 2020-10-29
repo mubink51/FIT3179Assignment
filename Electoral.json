@@ -162,12 +162,19 @@
     "legend": {
       "orient": "none",
       "legendX": 490,
-      "legendY": 640,
+      "legendY": 620,
       "direction": "horizontal",
       "labelFontSize": 12,
       "titleFontSize": 14,
-      "titlePadding": 5
+      "titlePadding": 5,
+      "labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"
     },
-    "style": {"cell": {"stroke": "transparent"}}
-  }
+    "style": {"cell": {"stroke": "transparent"}},
+    "axis": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
+ 
+  "header": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
+  "mark": {"font": "Lucida Sans Unicode"},
+  "title": {"font": "Lucida Sans Unicode", "subtitleFont": "Lucida Sans Unicode"}
+    }
+  
 }
