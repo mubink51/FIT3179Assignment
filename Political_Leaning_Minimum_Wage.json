@@ -15,8 +15,8 @@
         "x": {
           "field": "adjmov",
           "type": "quantitative",
-          "title": " <-- More Democratic                                                                                                   More Republican -->",
-          "axis": {"labels": false, "ticks": false,"titleFontSize": 18}
+          "title": " <-- More Democratic                                                       More Republican -->",
+          "axis": {"labels": false, "ticks": false,"titleFontSize": 15}
         },
         "y": {
           "field": "High_Min_Wage",
