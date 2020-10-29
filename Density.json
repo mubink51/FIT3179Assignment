@@ -35,7 +35,8 @@
       "scale": {"range": ["#e31212"]},
       "legend": null
     },
-    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false},"scale":{"domain":[0,14]}}
+    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false},"scale":{"domain":[0,14]}},
+    "tooltip":[{"field":"AverageHouseholdIncome", "aggregate":"count", "title":"Number of states"}]
     
     
   }
@@ -69,6 +70,7 @@
       "value":"#125be3"
 
     },
+    "tooltip":[{"field":"AverageHouseholdIncome", "aggregate":"count", "title":"Number of states"}],
     "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false}, "scale":{"domain":[0,14]}}
     
   }}, {"data": {"values": [{}]},"mark":{"type":"text", "size":19,
