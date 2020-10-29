@@ -10,7 +10,7 @@
     
     {
       "layer":[
-      {"mark": {"type": "area", "interpolate": "cardinal"},
+      {"mark": {"type": "bar", "interpolate": "cardinal"},
   "transform": [
     {"filter":"datum.Winning_Party == 'Republicans'"}
   ],
@@ -59,13 +59,13 @@
       "type": "quantitative",
       "scale": {"domain": [0, 100]}
     },
-    "x2": {"value":150},
+    "x2": {"value":160},
     "y2": {"value":100}
   }}
   
   ]},
   { 
-  "layer":[{"mark": {"type": "area", "interpolate": "cardinal"},
+  "layer":[{"mark": {"type": "bar", "interpolate": "cardinal"},
   "transform": [
     {"filter":"datum.Winning_Party == 'Democrats'"}
   ],
@@ -82,14 +82,14 @@
       "value":"#125be3"
 
     },
-    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false}}
+    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false}, "scale":{"domain":[0,14]}}
     
   }}, {"mark":{"type":"text", "text":["Average Democratic Household", "Income $107,413"], "size":19,
   "width":100, "fontWeight":"normal", "font":"arial"},
   "encoding":{
     "color":{"value":"black"},
-    "x":{"value":137},
-    "y":{"value":10}
+    "x":{"value":139},
+    "y":{"value":12}
   }},
   {  "data": {"values": [{}]},
   "mark": {
@@ -104,7 +104,7 @@
       "scale": {"domain": [0, 100]}
     },
     "y": {
-      "value":60,
+      "value":55,
       "type": "quantitative",
       "scale": {"domain": [0, 100]}
     },
