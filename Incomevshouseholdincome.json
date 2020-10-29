@@ -3,7 +3,7 @@
    "width": "container",
   "height": 450,
   "background": "#f5f3ed",
-  "title": {"text": "Comparison of Income and Average Age", "fontSize": 30},
+  "title": {"text": "Comparison of Income and Average Age", "fontSize": 25},
   "data": {
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/final.csv"
   },
