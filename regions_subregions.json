@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 1000,
-  "height": 700,
+  "width": 800,
+  "height": 650,
   "background": "#f5f3ed",
   "title": {
     "text": "US State Sub Regions",
@@ -115,7 +115,7 @@
       "mark": {
         "type": "text",
         "text": ["MID WEST"],
-        "x": 585,
+        "x": 485,
         "y": 270,
         "size": 30,
         "angle": 0,
@@ -127,8 +127,8 @@
       "mark": {
         "type": "text",
         "text": ["SOUTH"],
-        "x": 635,
-        "y": 480,
+        "x": 515,
+        "y": 420,
         "size": 30,
         "angle": -12,
         "color": "darkred",
@@ -139,7 +139,7 @@
       "mark": {
         "type": "text",
         "text": ["NORTH EAST"],
-        "x": 880,
+        "x": 705,
         "y": 210,
         "size": 29,
         "angle": -38,
@@ -150,14 +150,14 @@
   ],
   "config": {
     "legend": {
-      "labelFontSize": 11,
-      "titleFontSize": 15,
+      "labelFontSize": 15,
+      "titleFontSize": 18,
       "titlePadding": 5,
       "orient": "none",
       "direction": "horizontal",
       "columns": 4,
-      "legendX": 255,
-      "legendY": 680
+      "legendX": 105,
+      "legendY": 600
     },
     "style": {"cell": {"stroke": "transparent"}}
   }
