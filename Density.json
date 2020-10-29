@@ -46,7 +46,7 @@
   "encoding":{
     "text":{"condition": {"test": "Income_above < 100000 ", "value":["Average Republican ","Household Income $86,662"]}},
     "color":{"value":"black"},
-    "x":{"value":330},
+    "x":{"value":300},
     "y":{"value":14}
   }}
   
