@@ -35,7 +35,8 @@
         },
         "tooltip": [
           {"field": "state", "title": "State"},
-          {"field": "Bachelors", "title": "Proportion of population with a Bachelors Degree", "format":"~%"},
+          {"field": "Bachelors", "title": "Proportion of population", "format":"~%"},
+          {"field":"Winning_Party", "title:"Winning Party"},
           {"field": "MOV", "title": "Size of Republican Majority", "format":"~%"}
         ]
       }
