@@ -26,18 +26,26 @@
           "type": "quantitative",
           "title": "% of Population with Bachelors Degree",
           "scale": {"domain": [0, 0.65]},
-           "axis": {"titleFontSize": 20}
+          "axis": {"titleFontSize": 20}
         },
         "color": {
           "field": "Winning_Party",
           "scale": {"range": ["#125be3", "#e31212"]},
-          "legend":null
+          "legend": null
         },
         "tooltip": [
           {"field": "state", "title": "State"},
-          {"field": "Bachelors", "title": "Proportion of population", "format":"~%"},
-          {"field":"Winning_Party", "title":"Winning Party"},
-          {"field": "MOV", "title": "Size of Republican Majority", "format":"~%"}
+          {
+            "field": "Bachelors",
+            "title": "Proportion of population",
+            "format": "~%"
+          },
+          {"field": "Winning_Party", "title": "Winning Party"},
+          {
+            "field": "MOV",
+            "title": "Size of Republican Majority",
+            "format": "~%"
+          }
         ]
       }
     },
@@ -77,7 +85,7 @@
         }
       ]
     },
-    {
+    {"data": {"values": [{}]},
       "mark": {
         "type": "text",
         "text": "Republican States",
@@ -88,7 +96,7 @@
         "fontWeight": "bolder"
       }
     },
-    {
+    {"data": {"values": [{}]},
       "mark": {
         "type": "text",
         "text": "Democratic States",
@@ -100,5 +108,12 @@
       }
     }
   ],
-  "config": {"style": {"cell": {"stroke": "transparent"}}}
+  "config": {
+    "style": {"cell": {"stroke": "transparent"}},
+    "axis": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
+  "legend": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
+  "header": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
+  "mark": {"font": "arial"},
+  "title": {"font": "Lucida Sans Unicode", "subtitleFont": "Lucida Sans Unicode"}
+    }
 }
