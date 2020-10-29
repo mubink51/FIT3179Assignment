@@ -36,6 +36,7 @@
             "format": "$",
             "title": "Cost of a $100 item"
           },
+          {"field":"Winning_Party", "title":"Winning Party"},
           {"field": "MOV", "title": "Size of Republican Majority", "format":"~%"}
         ]
       }
