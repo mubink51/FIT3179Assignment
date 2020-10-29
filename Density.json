@@ -5,21 +5,27 @@
   },
   "background": "#f5f3ed",
   "title": {"text": "Distrubtion of Income by Party", "fontSize": 25},
-  
+  "params":[
+    {"name":"Income_above", "value":60000,
+    "bind":{"input":"range","min":60000,"max":130000,"name": "Minimum Income"}
+    }
+  ],
+  "transform": [{"filter":"datum.AverageHouseholdIncome > Income_above"}],
   "vconcat":[
     
     {
       "layer":[
-      {"mark": {"type": "bar", "interpolate": "cardinal"},
+      {"mark": {"type": "bar", "interpolate": "cardinal", "binSpacing": 1},
   "transform": [
     {"filter":"datum.Winning_Party == 'Republicans'"}
   ],
   
   "width": "container",
   "encoding": {
+    
     "x": {
       "field": "AverageHouseholdIncome",
-      "bin": true,
+      "bin": {"minstep": 10000},
       "title": "Average Income $",
       "scale":{"domain":[60000,140000]}
       ,"axis":{"ticks":false, "labels":false, "title":" ","values":[60000,80000,100000,120000,135000], "grid": true}
@@ -29,7 +35,7 @@
       "scale": {"range": ["#e31212"]},
       "legend": null
     },
-    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false}}
+    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false},"scale":{"domain":[0,14]}}
     
     
   }
@@ -69,11 +75,11 @@
   "transform": [
     {"filter":"datum.Winning_Party == 'Democrats'"}
   ],
-  "width":  "container",
+  "width":  "container", 
   "encoding": {
     "x": {
       "field": "AverageHouseholdIncome",
-      "bin": true,
+      "bin": {"minstep": 10000},
       "title": "Average Income $",
       "scale":{"domain":[60000,140000]},
       "axis":{"tickCount":7, "values":[60000,80000,100000,120000,135000], "grid": true}
