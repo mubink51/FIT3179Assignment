@@ -1,93 +1,164 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "data": {
-    "url": "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/np.csv"
-  },
-  "title": {"text":"Proportion of States won by Subregion", "fontSize":25, "subtitle":[" "], "subtitlePadding":20, "subtitleFontSize":15},
+  "width": 800,
+  "height": 650,
   "background": "#f5f3ed",
-  "width": 400,
-  "height": 400,
-  "params": [
-    {
-      "name": "year_select",
-      "value": 2016,
-      "bind": {
-        "input": "range",
-        "min": 1996,
-        "max": 2016,
-        "step": 4,
-        "name": "Select Election"
-      }
+  "title": {
+    "text": "US State Sub Regions",
+    "fontSize": 40,
+    "subtitle": "Regions are labelled on map",
+    "subtitleFontSize": 30,
+    "fontWeight": "bold"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/mubink51/FIT3179Hw2/main/ne_110m_admin_1_states_provinces%20(1).json",
+    "format": {
+      "type": "topojson",
+      "feature": "ne_110m_admin_1_states_provinces"
     }
-  ],
-  "transform": [
-    {"filter": "datum.Year==year_select"},
-    {
-      "calculate": "datum.Party == 'Democrat'? 'Democrat':'Republican'",
-      "as": "Politic"
-    }
-  ],
+  },
+  "projection": {"type": "albersUsa"},
   "layer": [
     {
-      "mark": "bar",
+      "selection": {
+        "state_highlight": {
+          "type": "multi",
+          "fields": ["state"],
+          "bind": "legend",
+          "on": "mouseover"
+        },
+        "region_highlight": {
+          "type": "multi",
+          "fields": ["Region"],
+          "bind": "legend",
+          "on": "mouseover"
+        },
+        "subregion_highlight": {
+          "type": "single",
+          "fields": ["Specific_Region"],
+          "bind": "legend",
+          "on": "mouseover"
+        }
+      },
+      "mark": {"type": "geoshape", "stroke": "#f5f3ed"},
+      "transform": [
+        {
+          "lookup": "properties.name",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/mubink51/FIT3179Hw2/main/final.csv"
+            },
+            "key": "state",
+            "fields": [
+              "state",
+              "Specific_Region",
+              "population",
+              "Winning_Party",
+              "Region"
+            ]
+          }
+        }
+      ],
       "encoding": {
-        "x": {
-          "aggregate": "sum",
-          "field": "states",
-          "stack": "normalize",
-          "title": "Proportion of Vote"
-        },
-        "y": {
-          "field": "Region",
-          "sort": [
-            "South East Central",
-            "South West Central",
-            "West North Central",
-            "Mountain",
-            "East North Central",
-            "South Atlantic"
-          ]
-        },
         "color": {
-          "field": "Politic",
-          "scale": {"range": ["#125be3", "#e31212"]},
-          "title": "Political Party"
+          "condition": {
+            "selection": "region_highlight",
+            "field": "Specific_Region",
+            "title": "Sub Region",
+            "scale": {
+              "range": [
+                "#65b839",
+                "#1255a6",
+                "#faaf3e",
+                "#355985",
+                "#b51414",
+                "#f05151",
+                "#de3333",
+                "#699651"
+              ]
+            }
+          },
+          "value": null
+        },
+        "opacity": {
+          "condition": {"selection": "subregion_highlight", "value": 0.9},
+          "value": 0.25
+        },
+        "stroke":{
+          "condition":{"selection":"state_highlight", "value":"white"},
+          "value":null
+          
         },
         "tooltip": [
+          {"field":"state", "title":"State"},
+          {"field": "Specific_Region", "title": "Sub Region"},
           {"field": "Region"},
-          {"field": "Party"},
-          {"field": "prop", "format": ".2f", "title": "Proportion"},
-          {"field":"states", "title":"Total states won"}
+          {"field": "population", "format": ","},
+          {"field": "Winning_Party", "title": "2016 Elected party"}
           
         ]
       }
     },
     {
-      "data": {"values": [{}]},
-      "encoding": {"x": {"datum": 0.5}},
-      "layer": [
-        {
-          "mark": "rule",
-          "encoding": {"size": {"value": 4}, "color": {"value": "gray"}}
-        },
-        {
-          "mark": {
-            "type": "text",
-            "align": "right",
-            "baseline": "bottom",
-            "dx": 25,
-            "dy": -200,
-            "x": "width",
-            "text": "Majority",
-            "size": 18
-          }
-        }
-      ]
+      "mark": {
+        "type": "text",
+        "text": ["WEST"],
+        "x": 205,
+        "y": 270,
+        "size": 30,
+        "angle": 10,
+        "color": "darkblue",
+        "font": "lucida sans"
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "text": ["MID WEST"],
+        "x": 485,
+        "y": 270,
+        "size": 30,
+        "angle": 0,
+        "color": "darkgreen",
+        "font": "lucida sans"
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "text": ["SOUTH"],
+        "x": 515,
+        "y": 420,
+        "size": 30,
+        "angle": -12,
+        "color": "darkred",
+        "font": "lucida sans"
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "text": ["NORTH EAST"],
+        "x": 705,
+        "y": 210,
+        "size": 29,
+        "angle": -38,
+        "color": "#b38b0b",
+        "font": "lucida sans"
+      }
     }
   ],
   "config": {
-    "axis":{
-      "labelFontSize":12
-    }
+    "legend": {
+      "labelFontSize": 15,
+      "titleFontSize": 18,
+      "titlePadding": 5,
+      "orient": "none",
+      "direction": "horizontal",
+      "columns": 4,
+      "legendX": 105,
+      "legendY": 600
+    },
+    "style": {"cell": {"stroke": "transparent"}}
   }
 }
