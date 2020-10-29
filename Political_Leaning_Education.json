@@ -19,14 +19,14 @@
           "field": "adjmov",
           "type": "quantitative",
           "title": " <-- More Democratic                                                                                               More Republican -->",
-          "axis": {"labels": false, "ticks": false}
+          "axis": {"labels": false, "ticks": false,"titleFontSize": 18}
         },
         "y": {
           "field": "Bachelors",
           "type": "quantitative",
           "title": "% of Population with Bachelors Degree",
           "scale": {"domain": [0, 0.65]},
-          "axis": {"titleFontSize": 20}
+          "axis": {"titleFontSize": 18}
         },
         "color": {
           "field": "Winning_Party",
