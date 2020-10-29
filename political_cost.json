@@ -14,15 +14,15 @@
         "x": {
           "field": "adjmov",
           "type": "quantitative",
-          "title": " <-- More Democratic                                                                                                 More Republican -->",
-          "axis": {"labels": false, "ticks": false}
+          "title": " <-- More Democratic                                                       More Republican -->",
+          "axis": {"labels": false, "ticks": false,"titleFontSize": 15}
         },
         "y": {
           "field": "Cost_Of_Living",
           "type": "quantitative",
           "title": "Relative cost of a $100 item",
           "scale": {"domain": [0, 200]},
-          "axis": {"titleFontSize": 20}
+          "axis": {"titleFontSize": 18}
         },
         "color": {
           "field": "Winning_Party",
@@ -101,5 +101,12 @@
       }
     }
   ],
-  "config": {"style": {"cell": {"stroke": "transparent"}}}
+ "config": {
+    "style": {"cell": {"stroke": "transparent"}},
+    "axis": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
+  "legend": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
+  "header": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
+  "mark": {"font": "Lucida Sans Unicode"},
+  "title": {"font": "Lucida Sans Unicode", "subtitleFont": "Lucida Sans Unicode"}
+    }
 }
