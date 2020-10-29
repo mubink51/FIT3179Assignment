@@ -3,7 +3,7 @@
   "height": 400,
   "width": "container",
   "background": "#f5f3ed",
-  "title": {"text": "Political Leaning and Minimum Wage", "fontSize": 26},
+  "title": {"text": "Political Leaning and Minimum Wage", "fontSize": 25},
   "data": {
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/final.csv"
   },
@@ -22,17 +22,20 @@
           "field": "High_Min_Wage",
           "type": "quantitative",
           "title": "Minimum Wage $ Per Hour",
-          "scale": {"domain": [0, 15]}
+          "scale": {"domain": [0, 15]},
+           "axis": {"titleFontSize": 20}
         },
         "color": {
           "field": "Winning_Party",
-          "scale": {"range": ["#125be3", "#e31212"]}
+          "scale": {"range": ["#125be3", "#e31212"]},
+          "legend":null
         },
         "tooltip": [
-          {"field": "adjmov"},
-          {"field": "state"},
-          {"field": "High_Min_Wage", "format": "$"},
-          {"field": "MOV", "title": "Size of Republican Majority"}
+
+          {"field": "state", "title":"State"},
+          {"field": "High_Min_Wage", "format": "$", "title":"Minimum Wage"},
+          {"field":"Winning_Party", "title":"Winning Party"},
+          {"field": "MOV", "title": "Size of Republican Majority", "format":"~%"}
         ]
       }
     },
@@ -54,8 +57,8 @@
         "color": "firebrick",
         "x": "width",
         "align": "right",
-        "y": -5,
-        "size": 15
+        "y": 12,
+        "size": 18
       },
       "encoding": {"text": {"type": "nominal", "field": "R2"}}
     },
@@ -72,22 +75,22 @@
         }
       ]
     },
-    {
+    {"data":[{}],
       "mark": {
         "type": "text",
         "text": "Republican States",
-        "x": 500,
+        "x": 450,
         "y": 350,
         "color": "#e31212",
         "size": 14,
         "fontWeight": "bolder"
       }
     },
-    {
+    {"data":[{}],
       "mark": {
         "type": "text",
         "text": "Democratic States",
-        "x": 260,
+        "x": 240,
         "y": 350,
         "color": "#125be3",
         "size": 14,
