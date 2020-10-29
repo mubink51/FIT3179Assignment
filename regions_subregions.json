@@ -93,7 +93,7 @@
           {"field":"state", "title":"State"},
           {"field": "Specific_Region", "title": "Sub Region"},
           {"field": "Region"},
-          {"field": "population", "format": ","},
+          {"field": "population", "format": ",", "title":"Population"},
           {"field": "Winning_Party", "title": "2016 Elected party"}
           
         ]
