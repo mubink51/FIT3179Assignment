@@ -7,7 +7,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/final.csv"
   },
-  "transform": [{"calculate": "datum.MOV+0.5", "as": "apple"}],
+  "transform": [{"calculate": "datum.Adult_Obesity_100/100", "as": "apple"}],
   "layer": [
     {
       "mark": {"type": "circle", "size": 100, "filled": true},
@@ -31,8 +31,8 @@
         },
         "tooltip": [
           {"field": "state", "title": "State"},
-          {"field": "Adult_Obesity_100", "title": "2017 Adult Obesity (%)"},
-          {"field": "MOV", "title": "Size of Republican Majority"}
+          {"field": "apple", "title": "Obesity Rate", "format":"~%"},
+          {"field": "MOV", "title": "Size of Republican Majority", "format":"~%"}
         ]
       }
     },
