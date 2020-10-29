@@ -9,12 +9,12 @@
   },
   "layer": [
     {
-      "mark": {"type": "circle", "size": 70, "filled": true},
+      "mark": {"type": "circle", "size": 100, "filled": true},
       "encoding": {
         "x": {
           "field": "adjmov",
           "type": "quantitative",
-          "title": " <-- More Democratic                                                       More Republican -->",
+          "title": " <-- More Democratic                                                  More Republican -->",
           "axis": {"labels": false, "ticks": false,"titleFontSize": 15}
         },
         "y": {
