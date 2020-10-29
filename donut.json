@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "A simple donut chart with embedded data.",
-  "height": 500,
+  "height": 448,
   "width": 400,
   "title": {"text":"Proportion of US Population in", "fontSize":25, "subtitle":"Democratic and Republican Majority States", "subtitlePadding":15, "subtitleFontSize":25},
   "background": "#f5f3ed",
@@ -177,7 +177,7 @@
       "mark": {
         "type": "text",
         "x": 115,
-        "y": 156,
+        "y": 125,
         "color": "white",
         "size": 35,
         "fontWeight": "bold"
@@ -188,7 +188,7 @@
       "mark": {
         "type": "text",
         "x": 285,
-        "y": 156,
+        "y": 125,
         "color": "white",
         "size": 35,
         "fontWeight": "bold"
