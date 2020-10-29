@@ -4,7 +4,6 @@
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/final.csv"
   },
   "background": "#f5f3ed",
-  "title": {"text": "Distrubtion of Income by Party", "fontSize": 25},
   "params":[
     {"name":"Income_above", "value":60000,
     "bind":{"input":"range","min":60000,"max":130000,"name": "Minimum Income"}
@@ -15,7 +14,8 @@
     
     {
       "layer":[
-      {"mark": {"type": "bar", "interpolate": "cardinal", "binSpacing": 1},
+      {
+  "title": {"text": "Distrubtion of Income by Party", "fontSize": 25}, "mark": {"type": "bar", "interpolate": "cardinal", "binSpacing": 1},
   "transform": [
     {"filter":"datum.Winning_Party == 'Republicans'"}
   ],
