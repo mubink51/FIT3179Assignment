@@ -58,7 +58,7 @@
         "color": "firebrick",
         "x": "width",
         "align": "right",
-        "y": 10,
+        "y": 12,
         "size": 18
       },
       "encoding": {"text": {"type": "nominal", "field": "R2"}}
@@ -91,7 +91,7 @@
       "mark": {
         "type": "text",
         "text": "Democratic States",
-        "x": 260,
+        "x": 240,
         "y": 350,
         "color": "#125be3",
         "size": 14,
