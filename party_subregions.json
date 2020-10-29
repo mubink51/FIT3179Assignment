@@ -56,7 +56,7 @@
         "tooltip": [
           {"field": "Region"},
           {"field": "Party"},
-          {"field": "prop", "format": ".2f", "title": "Proportion"},
+          {"field": "prop", "format": "~%", "title": "Proportion"},
           {"field":"states", "title":"Total states won"}
           
         ]
