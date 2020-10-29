@@ -1,81 +1,81 @@
-Region,Party,states,Year,total,prop
-East North Central,Democrat,1,2016,5,0.2
-East North Central,Republican,4,2016,5,0.8
-Mountain,Democrat,3,2016,8,0.375
-Mountain,Republican,5,2016,8,0.625
-North East,Democrat,8,2016,9,0.888888889
-North East,Republican,1,2016,9,0.111111111
-Pacific,Democrat,4,2016,5,0.8
-Pacific,Republican,1,2016,5,0.2
-South Atlantic,Democrat,4,2016,9,0.444444444
-South Atlantic,Republican,5,2016,9,0.555555556
-South East Central,Republican,4,2016,4,1
-South West Central,Republican,4,2016,4,1
-West North Central,Democrat,1,2016,7,0.142857143
-West North Central,Republican,6,2016,7,0.857142857
-East North Central,democrat,4,2012,5,0.8
-East North Central,Republican,1,2012,5,0.2
-Mountain,democrat,3,2012,8,0.375
-Mountain,Republican,5,2012,8,0.625
-North East,democrat,9,2012,9,1
-Pacific,democrat,4,2012,5,0.8
-Pacific,Republican,1,2012,5,0.2
-South Atlantic,democrat,5,2012,9,0.555555556
-South Atlantic,Republican,4,2012,9,0.444444444
-South East Central,Republican,4,2012,4,1
-South West Central,Republican,4,2012,4,1
-West North Central,democrat,2,2012,7,0.285714286
-West North Central,Republican,5,2012,7,0.714285714
-East North Central,Democrat,5,2008,5,1
-Mountain,Democrat,3,2008,8,0.375
-Mountain,Republican,5,2008,8,0.625
-North East,Democrat,9,2008,9,1
-Pacific,Democrat,4,2008,5,0.8
-Pacific,Republican,1,2008,5,0.2
-South Atlantic,Democrat,6,2008,9,0.666666667
-South Atlantic,Republican,3,2008,9,0.333333333
-South East Central,Republican,4,2008,4,1
-South West Central,Republican,4,2008,4,1
-West North Central,Democrat,3,2008,7,0.428571429
-West North Central,Republican,4,2008,7,0.571428571
-East North Central,Democrat,3,2004,5,0.6
-East North Central,Republican,2,2004,5,0.4
-Mountain,Republican,8,2004,8,1
-North East,Democrat,9,2004,9,1
-Pacific,Democrat,4,2004,5,0.8
-Pacific,Republican,1,2004,5,0.2
-South Atlantic,Democrat,3,2004,9,0.333333333
-South Atlantic,Republican,6,2004,9,0.666666667
-South East Central,Republican,4,2004,4,1
-South West Central,Republican,4,2004,4,1
-West North Central,Democrat,1,2004,7,0.142857143
-West North Central,Republican,6,2004,7,0.857142857
-East North Central,Democrat,3,2000,5,0.6
-East North Central,Republican,2,2000,5,0.4
-Mountain,Democrat,1,2000,8,0.125
-Mountain,Republican,7,2000,8,0.875
-North East,Democrat,8,2000,9,0.888888889
-North East,Republican,1,2000,9,0.111111111
-Pacific,Democrat,4,2000,5,0.8
-Pacific,Republican,1,2000,5,0.2
-South Atlantic,Democrat,4,2000,9,0.444444444
-South Atlantic,Republican,5,2000,9,0.555555556
-South East Central,Republican,4,2000,4,1
-South West Central,Republican,4,2000,4,1
-West North Central,Democrat,2,2000,7,0.285714286
-West North Central,Republican,5,2000,7,0.714285714
-East North Central,Democrat,4,1996,5,0.8
-East North Central,Republican,1,1996,5,0.2
-Mountain,Democrat,3,1996,8,0.375
-Mountain,Republican,5,1996,8,0.625
-North East,Democrat,9,1996,9,1
-Pacific,Democrat,4,1996,5,0.8
-Pacific,Republican,1,1996,5,0.2
-South Atlantic,Democrat,5,1996,9,0.555555556
-South Atlantic,Republican,4,1996,9,0.444444444
-South East Central,Democrat,2,1996,4,0.5
-South East Central,Republican,2,1996,4,0.5
-South West Central,Democrat,2,1996,4,0.5
-South West Central,Republican,2,1996,4,0.5
-West North Central,Democrat,3,1996,7,0.428571429
-West North Central,Republican,4,1996,7,0.571428571
+"","Region","Party","states","Year","total","prop"
+"1","East North Central","Democrat",1,2016,5,0.2
+"2","East North Central","Republican",4,2016,5,0.8
+"3","Mountain","Democrat",3,2016,8,0.375
+"4","Mountain","Republican",5,2016,8,0.625
+"5","North East","Democrat",8,2016,9,0.888888888888889
+"6","North East","Republican",1,2016,9,0.111111111111111
+"7","Pacific","Democrat",4,2016,5,0.8
+"8","Pacific","Republican",1,2016,5,0.2
+"9","South Atlantic","Democrat",4,2016,9,0.444444444444444
+"10","South Atlantic","Republican",5,2016,9,0.555555555555556
+"11","South East Central","Republican",4,2016,4,1
+"12","South West Central","Republican",4,2016,4,1
+"13","West North Central","Democrat",1,2016,7,0.142857142857143
+"14","West North Central","Republican",6,2016,7,0.857142857142857
+"15","East North Central","Democrat",4,2012,5,0.8
+"16","East North Central","Republican",1,2012,5,0.2
+"17","Mountain","Democrat",3,2012,8,0.375
+"18","Mountain","Republican",5,2012,8,0.625
+"19","North East","Democrat",9,2012,9,1
+"20","Pacific","Democrat",4,2012,5,0.8
+"21","Pacific","Republican",1,2012,5,0.2
+"22","South Atlantic","Democrat",5,2012,9,0.555555555555556
+"23","South Atlantic","Republican",4,2012,9,0.444444444444444
+"24","South East Central","Republican",4,2012,4,1
+"25","South West Central","Republican",4,2012,4,1
+"26","West North Central","Democrat",2,2012,7,0.285714285714286
+"27","West North Central","Republican",5,2012,7,0.714285714285714
+"28","East North Central","Democrat",5,2008,5,1
+"29","Mountain","Democrat",3,2008,8,0.375
+"30","Mountain","Republican",5,2008,8,0.625
+"31","North East","Democrat",9,2008,9,1
+"32","Pacific","Democrat",4,2008,5,0.8
+"33","Pacific","Republican",1,2008,5,0.2
+"34","South Atlantic","Democrat",6,2008,9,0.666666666666667
+"35","South Atlantic","Republican",3,2008,9,0.333333333333333
+"36","South East Central","Republican",4,2008,4,1
+"37","South West Central","Republican",4,2008,4,1
+"38","West North Central","Democrat",3,2008,7,0.428571428571429
+"39","West North Central","Republican",4,2008,7,0.571428571428571
+"40","East North Central","Democrat",3,2004,5,0.6
+"41","East North Central","Republican",2,2004,5,0.4
+"42","Mountain","Republican",8,2004,8,1
+"43","North East","Democrat",9,2004,9,1
+"44","Pacific","Democrat",4,2004,5,0.8
+"45","Pacific","Republican",1,2004,5,0.2
+"46","South Atlantic","Democrat",3,2004,9,0.333333333333333
+"47","South Atlantic","Republican",6,2004,9,0.666666666666667
+"48","South East Central","Republican",4,2004,4,1
+"49","South West Central","Republican",4,2004,4,1
+"50","West North Central","Democrat",1,2004,7,0.142857142857143
+"51","West North Central","Republican",6,2004,7,0.857142857142857
+"52","East North Central","Democrat",3,2000,5,0.6
+"53","East North Central","Republican",2,2000,5,0.4
+"54","Mountain","Democrat",1,2000,8,0.125
+"55","Mountain","Republican",7,2000,8,0.875
+"56","North East","Democrat",8,2000,9,0.888888888888889
+"57","North East","Republican",1,2000,9,0.111111111111111
+"58","Pacific","Democrat",4,2000,5,0.8
+"59","Pacific","Republican",1,2000,5,0.2
+"60","South Atlantic","Democrat",4,2000,9,0.444444444444444
+"61","South Atlantic","Republican",5,2000,9,0.555555555555556
+"62","South East Central","Republican",4,2000,4,1
+"63","South West Central","Republican",4,2000,4,1
+"64","West North Central","Democrat",2,2000,7,0.285714285714286
+"65","West North Central","Republican",5,2000,7,0.714285714285714
+"66","East North Central","Democrat",4,1996,5,0.8
+"67","East North Central","Republican",1,1996,5,0.2
+"68","Mountain","Democrat",3,1996,8,0.375
+"69","Mountain","Republican",5,1996,8,0.625
+"70","North East","Democrat",9,1996,9,1
+"71","Pacific","Democrat",4,1996,5,0.8
+"72","Pacific","Republican",1,1996,5,0.2
+"73","South Atlantic","Democrat",5,1996,9,0.555555555555556
+"74","South Atlantic","Republican",4,1996,9,0.444444444444444
+"75","South East Central","Democrat",2,1996,4,0.5
+"76","South East Central","Republican",2,1996,4,0.5
+"77","South West Central","Democrat",2,1996,4,0.5
+"78","South West Central","Republican",2,1996,4,0.5
+"79","West North Central","Democrat",3,1996,7,0.428571428571429
+"80","West North Central","Republican",4,1996,7,0.571428571428571
