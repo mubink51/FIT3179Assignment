@@ -161,7 +161,7 @@
     "legend": {
       "labelFontSize": 15,
       "titleFontSize": 18,
-      "titlePadding": 5,
+      "titlePadding": 8,
       "orient": "none",
       "direction": "horizontal",
       "columns": 4,
