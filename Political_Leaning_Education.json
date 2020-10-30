@@ -38,7 +38,7 @@
           {
             "field": "Bachelors",
             "title": "Proportion of population",
-            "format": "~%"
+            "format": "~%", "title":"% of Population with Bachelors"
           },
           {"field": "Winning_Party", "title": "Winning Party"},
           {
