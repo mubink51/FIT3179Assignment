@@ -47,10 +47,12 @@
           "W2008",
           "W2004",
           "W2000",
-          "W1996"
+          "W1996",
+          "population",	"Adult_Obesity",	"Average_Age",	"Bachelors"	,"AverageHouseholdIncome",	"Cost_Of_Living"
         ]
       }
-    }
+    },
+    {"calculate": "abs(datum.MOV2016)", "as": "absolute"}
 
   ],
   "layer": [
@@ -86,8 +88,14 @@
         },
         "tooltip": [
           {"field": "State", "title": "State"},
-          {"field": "WP2016", "title": "Winning Party"},
-          {"field": "mov", "title": "Margin of Victory", "format": ".0%"}
+          {"field": "W2016", "title": "Winning Party"},
+          {"field": "absolute", "title": "Margin of Victory", "format": ".0%"},
+          {"field":"population", "title":"Population", "format":"1s"},
+          {"field":"AverageHouseholdIncome","title":"Average Household Income", "format":"$,"},
+          {"field":"Adult_Obesity", "title":"Adult Obesity", "format":"%"},
+          {"field":"Cost_Of_Living", "title":"Cost of $100", "format":"$"},
+          {"field":"Average_Age", "title":"Average Age", "format":".1f"},
+          {"field":"Bachelors", "title":"Higher Education levels", "format":"%"}
         ]
       }
     }
