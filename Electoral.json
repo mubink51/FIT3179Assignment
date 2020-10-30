@@ -165,7 +165,7 @@
       "legendY": 620,
       "direction": "horizontal",
       "labelFontSize": 12,
-      "titleFontSize": 14,
+      "titleFontSize": 12,
       "titlePadding": 5,
       "labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"
     },
