@@ -3,7 +3,7 @@
   "width": 550,
   "height": 450,
   "background": "#f5f3ed",
-  "title": {"text": "Democratic State 1996-2016", "fontSize": 25},
+  "title": {"text": "Democratic State 2016", "fontSize": 25},
   "data": {
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Hw2/main/ne_110m_admin_1_states_provinces%20(1).json",
     "format": {
@@ -12,17 +12,7 @@
     }
   },
   "params": [
-    {
-      "name": "year_select",
-      "value": 2016,
-      "bind": {
-        "input": "range",
-        "min": 1996,
-        "max": 2016,
-        "step": 4,
-        "name": "Select Election"
-      }
-    }
+    
   ],
   "transform": [
     {
@@ -60,11 +50,8 @@
           "W1996"
         ]
       }
-    },
-    {"calculate": "datum[year_select]", "as": "winning_party"},
-    {"calculate": "datum['W'+year_select]", "as": "winning_party2"},
-    {"calculate": "abs(datum['MOV'+year_select])", "as": "mov"},
-    {"calculate": "year_select + 'Winning Party'", "as": "tootleip"}
+    }
+
   ],
   "layer": [
     {
@@ -84,7 +71,7 @@
           "value": "#f5f3ed"
         },
         "color": {
-          "field": "winning_party",
+          "field": "WP2016",
           "type": "quantitative",
           "legend": null,
           "scale": {
@@ -99,7 +86,7 @@
         },
         "tooltip": [
           {"field": "State", "title": "State"},
-          {"field": "winning_party2", "title": "Winning Party"},
+          {"field": "WP2016", "title": "Winning Party"},
           {"field": "mov", "title": "Margin of Victory", "format": ".0%"}
         ]
       }
