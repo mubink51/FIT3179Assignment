@@ -92,10 +92,10 @@
           {"field": "absolute", "title": "Margin of Victory", "format": ".0%"},
           {"field":"population", "title":"Population", "format":"1s"},
           {"field":"AverageHouseholdIncome","title":"Average Household Income", "format":"$,"},
-          {"field":"Adult_Obesity", "title":"Adult Obesity", "format":"%"},
+          {"field":"Adult_Obesity", "title":"Adult Obesity", "format":"~%"},
           {"field":"Cost_Of_Living", "title":"Cost of $100", "format":"$"},
           {"field":"Average_Age", "title":"Average Age", "format":".1f"},
-          {"field":"Bachelors", "title":"Higher Education levels", "format":"%"}
+          {"field":"Bachelors", "title":"Higher Education levels", "format":"~%"}
         ]
       }
     }
