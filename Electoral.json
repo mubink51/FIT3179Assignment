@@ -94,18 +94,23 @@
           "value": "black"
         },
         "color": {
-          "field": "winning_party",
-          "type": "quantitative",
-          "title": "Size of Republican Victory",
+          "field": "winning_party2",
+          "type": "nominal",
+          "title": "Winning Party",
+    "legend": {
+      "orient": "none",
+      "legendX": 500,
+      "legendY": 550,
+      "direction": "horizontal",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titlePadding": 5,
+      "labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"
+    },
           "scale": {
-            "type": "threshold",
-            "domain": [-0.1, -0.03, 0, 0.03, 0.1],
+           
             "range": [
               "#125be3",
-              "#389ed9",
-              "#dcf0fa",
-              "#fcc7c7",
-              "#eb6363",
               "#e31212"
             ]
           }
@@ -133,6 +138,16 @@
           "field": "year_selection",
           "type": "quantitative",
           "title": "Size of Republican Victory",
+              "legend": {
+      "orient": "none",
+      "legendX": 500,
+      "legendY": 600,
+      "direction": "horizontal",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titlePadding": 5,
+      "labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"
+    },
           "scale": {
             "type": "threshold",
             "domain": [-0.1, -0.03, 0, 0.03, 0.1],
@@ -159,16 +174,7 @@
     }
   ],
   "config": {
-    "legend": {
-      "orient": "none",
-      "legendX": 490,
-      "legendY": 620,
-      "direction": "horizontal",
-      "labelFontSize": 12,
-      "titleFontSize": 12,
-      "titlePadding": 5,
-      "labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"
-    },
+
     "style": {"cell": {"stroke": "transparent"}},
     "axis": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
  
