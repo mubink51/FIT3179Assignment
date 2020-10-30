@@ -5,9 +5,9 @@
   "background": "#f5f3ed",
   "title": {
     "text": "US State Sub Regions",
-    "fontSize": 34,
+    "fontSize": 28,
     "subtitle": "Regions are labelled on map",
-    "subtitleFontSize": 27,
+    "subtitleFontSize": 24,
     "fontWeight": "bold"
   },
   "data": {
@@ -25,7 +25,8 @@
           "type": "multi",
           "fields": ["state"],
           "bind": "legend",
-          "on": "mouseover"
+          "on": "mouseover",
+          "empty": "none"
         },
         "region_highlight": {
           "type": "multi",
@@ -40,7 +41,7 @@
           "on": "mouseover"
         }
       },
-      "mark": {"type": "geoshape", "stroke": "#f5f3ed"},
+      "mark": {"type": "geoshape", "stroke": "#f5f3ed", "strokeWidth":1},
       "transform": [
         {
           "lookup": "properties.name",
@@ -86,7 +87,15 @@
         },
         "stroke":{
           "condition":{"selection":"state_highlight", "value":"white"},
-          "value":null
+          "value":"#f5f3ed"
+         
+          
+        },
+        "strokeWidth":{
+          "condition":{"selection":"state_highlight", "value":4},
+          "value":1
+          
+         
           
         },
         "tooltip": [
