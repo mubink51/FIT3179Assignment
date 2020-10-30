@@ -3,7 +3,7 @@
    "width": "container",
   "height": 450,
   "background": "#f5f3ed",
-  "title": {"text": "Comparison of Income and Average Age", "fontSize": 25},
+  "title": {"text": "Comparison of Income and Average Age", "fontSize": 25, "subtitle":"Scroll to zoom and double click to reset zoom"},
   "data": {
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/final.csv"
   },
@@ -66,6 +66,7 @@
           "title": "Average Household Income above mean",
           "axis": {"tickCount": 4, "titleFontSize": 18},
           "scale": {"type": "linear", "domain": [-40000, 40000]}
+          
         },
         "tooltip": [
           {"field": "state", "title": "State"},
