@@ -131,6 +131,13 @@
          background-color: #DEE7E7
          ;
          }
+	 ul li { 
+
+	 padding: 5px 0px;
+	 
+
+	 }
+	 
       </style>
    </head>
    <body>
@@ -424,11 +431,52 @@
          </div>
 </div>
 <br>
-<div class = "pure-g">
+	 <div class = "pure-g">
             <div class = "pure-u-1-1 subdiv">
-               <h2> THIS IS A SUBDIVIDER HEY HO </h2>
+               <h2> SUMMARY OF FINDINGS </h2>
             </div>
          </div>
+<p style="width 200px; text-align:center;">Below is a summary of our findings for each state. On the right <br>we see an outline of what the 2 separate states would look like. </p>
+	 <div class = "pure-g" style="padding-top:30px">
+		<div class = "pure-u-1-2">
+			
+			<ul style = "padding-left: 200px;">
+				<li  style = "font-size:24px;"><h3 class = "Republican" style = "font-size:24px;">Republican State Summary</h3></li>
+				<li style="margin-left:40px;">Lower Average Income: <strong>$86,662</strong></li>
+				<li style="margin-left:40px;">Lower Average Age: <strong>38.5 years</strong></li>
+				<li style="margin-left:40px;">Higher Obesity levels: <strong>30%</strong></li>
+				<li style="margin-left:40px;">Lower cost of living: <strong>~0.9x</strong> average</li>
+				<li style="margin-left:40px;">Lower minimum wages: <strong>~$7</strong> </li>
+				<li style="margin-left:40px;">Lower levels of higher education: <strong>~25%</strong></li>
+				<li style="margin-left:40px;">Larger population: <strong>183M</strong></li>
+				<li style="margin-left:40px;">Greater number of states:<strong> 30</strong></li>
+			</ul>
+		</div>
+		<div class = "pure-u-1-2">
+				<div id = "vis11"></div>
+	
+		</div>
+	</div>
+	 <div class = "pure-g">
+		<div class = "pure-u-1-2">
+			<ul style = "padding-left: 200px;">
+				<li  style = "font-size:24px;"><h3 class = "Democrat" style = "font-size:24px;">Democratic State Summary</h3></li>
+				<li style="margin-left:40px;">Higher Average Income: <strong>$107,413</strong></li>
+				<li style="margin-left:40px;">Higher Average Age: <strong>39.5 years</strong></li>
+				<li style="margin-left:40px;">Lower Obesity levels: <strong>25%</strong></li>
+				<li style="margin-left:40px;">Higher cost of living: <strong>~1.2x average</strong></li>
+				<li style="margin-left:40px;">Higher minimum wages:<strong> ~$10 </strong></li>
+				<li style="margin-left:40px;">Higher levels of higher education: <strong>~35%</strong></li>
+				<li style="margin-left:40px;">Smaller population: <strong>140M</strong></li>
+				<li style="margin-left:40px;">Fewer number of states: <strong>21</strong></li>
+			</ul>
+			
+		</div>
+		<div class = "pure-u-1-2">
+			<div id = "vis12"></div>
+	
+		</div>
+	</div>
       </div>
          
       <script type="text/javascript">
@@ -495,6 +543,18 @@
            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
          }).catch(console.error);
          
+
+	 var repstate = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/Republican_State.json";
+         
+         vegaEmbed('#vis11', repstate, {"actions": false}).then(function(result) {
+           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+         }).catch(console.error);
+
+	 var demstate = "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/Democratic_State.json";
+         
+         vegaEmbed('#vis12', demstate, {"actions": false}).then(function(result) {
+           // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+         }).catch(console.error);
          
          
          
