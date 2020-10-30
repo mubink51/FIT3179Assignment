@@ -5,9 +5,9 @@
   "background": "#f5f3ed",
   "title": {
     "text": "US State Sub Regions",
-    "fontSize": 40,
+    "fontSize": 34,
     "subtitle": "Regions are labelled on map",
-    "subtitleFontSize": 30,
+    "subtitleFontSize": 27,
     "fontWeight": "bold"
   },
   "data": {
