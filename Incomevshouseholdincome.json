@@ -39,9 +39,9 @@
   ],
   "mark": "circle",
   "layer": [
-    {
+    { 
       "selection": {
-
+"grid": {"type": "interval", "bind": "scales"},
         "state_highlight": {
           "type": "multi",
           "fields": ["state"],
@@ -127,7 +127,7 @@
           "scale": {"type": "linear", "domain": [-12000, 12000]}
         },
         "text": {"field": "state_abr"},
-        "color": {"value": "black"},
+        "color": {"value": "white"},
         "opacity": {
 
           "value": 0.8
