@@ -3,7 +3,7 @@
   "width": 550,
   "height": 450,
   "background": "#f5f3ed",
-  "title": {"text": "Republican State 1996-2016", "fontSize": 25},
+  "title": {"text": "Democratic State 2016", "fontSize": 25},
   "data": {
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Hw2/main/ne_110m_admin_1_states_provinces%20(1).json",
     "format": {
@@ -12,17 +12,7 @@
     }
   },
   "params": [
-    {
-      "name": "year_select",
-      "value": 2016,
-      "bind": {
-        "input": "range",
-        "min": 1996,
-        "max": 2016,
-        "step": 4,
-        "name": "Select Election"
-      }
-    }
+    
   ],
   "transform": [
     {
@@ -57,14 +47,13 @@
           "W2008",
           "W2004",
           "W2000",
-          "W1996"
+          "W1996",
+          "population",	"Adult_Obesity",	"Average_Age",	"Bachelors"	,"AverageHouseholdIncome",	"Cost_Of_Living"
         ]
       }
     },
-    {"calculate": "datum[year_select]", "as": "winning_party"},
-    {"calculate": "datum['W'+year_select]", "as": "winning_party2"},
-    {"calculate": "abs(datum['MOV'+year_select])", "as": "mov"},
-    {"calculate": "year_select + 'Winning Party'", "as": "tootleip"}
+    {"calculate": "abs(datum.MOV2016)", "as": "absolute"}
+
   ],
   "layer": [
     {
@@ -84,7 +73,7 @@
           "value": "#f5f3ed"
         },
         "color": {
-          "field": "winning_party",
+          "field": "WP2016",
           "type": "quantitative",
           "legend": null,
           "scale": {
@@ -99,8 +88,14 @@
         },
         "tooltip": [
           {"field": "State", "title": "State"},
-          {"field": "winning_party2", "title": "Winning Party"},
-          {"field": "mov", "title": "Margin of Victory", "format": ".0%"}
+          {"field": "W2016", "title": "Winning Party"},
+          {"field": "absolute", "title": "Margin of Victory", "format": ".0%"},
+          {"field":"population", "title":"Population", "format":"1s"},
+          {"field":"AverageHouseholdIncome","title":"Average Household Income", "format":"$,"},
+          {"field":"Adult_Obesity", "title":"Adult Obesity", "format":"%"},
+          {"field":"Cost_Of_Living", "title":"Cost of $100", "format":"$"},
+          {"field":"Average_Age", "title":"Average Age", "format":".1f"},
+          {"field":"Bachelors", "title":"Higher Education levels", "format":"%"}
         ]
       }
     }
