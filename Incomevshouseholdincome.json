@@ -86,7 +86,8 @@
               "type": "threshold",
               "domain": [1000000, 5000000, 10000000],
               "range": [350, 700, 1250, 2000]
-            }
+            },
+            "title":"Population"
 
         },
         "color": {
