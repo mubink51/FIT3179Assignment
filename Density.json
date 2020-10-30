@@ -20,7 +20,7 @@
     {"filter":"datum.Winning_Party == 'Republicans'"}
   ],
   
-  "width": "container",
+  "width": 450,
   "encoding": {
     
     "x": {
@@ -57,7 +57,7 @@
   "transform": [
     {"filter":"datum.Winning_Party == 'Democrats'"}
   ],
-  "width":  "container", 
+  "width":  450, 
   "encoding": {
     "x": {
       "field": "AverageHouseholdIncome",
@@ -78,8 +78,8 @@
   "encoding":{
     "text":{"condition": {"test": "Income_above < 134500 ", "value":["Average Democratic Household", "Income $107,413"]}},
     "color":{"value":"black"},
-    "x":{"value":139},
-    "y":{"value":12}
+    "x":{"value":149},
+    "y":{"value":38}
   }}]}],
   
   "config": {
