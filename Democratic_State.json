@@ -48,7 +48,7 @@
           "W2004",
           "W2000",
           "W1996",
-          "population",	"Adult_Obesity",	"Average_Age",	"Bachelors"	,"AverageHouseholdIncome",	"Cost_Of_Living"
+          "population",	"Adult_Obesity",	"Average_Age",	"Bachelors"	,"AverageHouseholdIncome",	"Cost_Of_Living", "High_Min_Wage"
         ]
       }
     },
@@ -90,12 +90,18 @@
           {"field": "State", "title": "State"},
           {"field": "W2016", "title": "Winning Party"},
           {"field": "absolute", "title": "Margin of Victory", "format": ".0%"},
-          {"field":"population", "title":"Population", "format":"1s"},
           {"field":"AverageHouseholdIncome","title":"Average Household Income", "format":"$,"},
+          {"field":"Average_Age", "title":"Average Age", "format":".1f"},
           {"field":"Adult_Obesity", "title":"Adult Obesity", "format":"~%"},
           {"field":"Cost_Of_Living", "title":"Cost of $100", "format":"$"},
-          {"field":"Average_Age", "title":"Average Age", "format":".1f"},
-          {"field":"Bachelors", "title":"Higher Education levels", "format":"~%"}
+          {"field":"High_Min_Wage", "title":"Minimum Wage", "format":"$"},
+          {"field":"Bachelors", "title":"Higher Education levels", "format":"~%"},
+          {"field":"population", "title":"Population", "format":"1s"}
+          
+         
+         
+        
+         
         ]
       }
     }
