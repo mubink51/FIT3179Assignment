@@ -68,14 +68,14 @@
             "title": "Sub Region",
             "scale": {
               "range": [
-                "#65b839",
+                "#b69ede",
                 "#1255a6",
                 "#faaf3e",
                 "#355985",
                 "#b51414",
                 "#f05151",
                 "#de3333",
-                "#699651"
+                "#6b1ee6"
               ]
             }
           },
@@ -128,7 +128,7 @@
         "y": 240,
         "size": 30,
         "angle": 0,
-        "color": "darkgreen",
+        "color": "#4b0699",
         "font": "lucida sans"
       }
     },
