@@ -108,7 +108,7 @@
         ]
       }
     },
-    {
+    {"data":null,
       "mark": {
         "type": "text",
         "text": ["WEST"],
@@ -120,7 +120,7 @@
         "font": "lucida sans"
       }
     },
-    {
+    { "data":null,
       "mark": {
         "type": "text",
         "text": ["MID WEST"],
@@ -132,7 +132,7 @@
         "font": "lucida sans"
       }
     },
-    {
+    {"data":null,
       "mark": {
         "type": "text",
         "text": ["SOUTH"],
@@ -144,7 +144,7 @@
         "font": "lucida sans"
       }
     },
-    {
+    {"data":null,
       "mark": {
         "type": "text",
         "text": ["NORTH EAST"],
