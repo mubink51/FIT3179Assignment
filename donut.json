@@ -3,7 +3,7 @@
   "description": "A simple donut chart with embedded data.",
   "height": 448,
   "width": 400,
-  "title": {"text":"Proportion of US Population in", "fontSize":25, "subtitle":"Democratic and Republican Majority States", "subtitlePadding":15, "subtitleFontSize":25},
+  "title": {"text":"Proportion of US Population in", "fontSize":25, "subtitle":"Democratic and Republican Majority States", "subtitlePadding":15, "subtitleFontSize":25, "subtitleFontWeight":"bold"},
   "background": "#f5f3ed",
   "data": {
     "values": [
