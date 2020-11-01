@@ -54,23 +54,23 @@
       "encoding": {
         "order":{"field":"population", "sort":"ascending"},
         "x": {
-          "field": "Average_Age",
+          "field": "median_age",
           "type": "quantitative",
           "title": "Average Age",
           "axis": {"tickCount": 5, "titleFontSize": 18},
-          "scale": {"type": "linear", "domain": [32, 43]}
+          "scale": {"type": "linear", "domain": [30, 45]}
         },
         "y": {
           "field": "avg_income",
           "type": "quantitative",
           "title": "Average Household Income above mean",
-          "axis": {"tickCount": 4, "titleFontSize": 18},
-          "scale": {"type": "linear", "domain": [-40000, 40000]}
+          "axis": {"titleFontSize": 18},
+          "scale": {"type": "linear", "domain": [-41000, 41000]}
           
         },
         "tooltip": [
           {"field": "state", "title": "State"},
-          {"field": "Average_Age", "title": "Average Age", "format": ".2f"},
+          {"field": "median_age", "title": "Average Age", "format": ".2f"},
           {
             "field": "AverageHouseholdIncome",
             "title": "Average Household Income",
@@ -115,7 +115,7 @@
       },
       "encoding": {
         "x": {
-          "field": "Average_Age",
+          "field": "median_age",
           "type": "quantitative",
           "title": "Average Age",
           "axis": {"tickCount": 3}
