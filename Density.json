@@ -35,7 +35,7 @@
       "scale": {"range": ["#e31212"]},
       "legend": null
     },
-    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false},"scale":{"domain":[0,14]}},
+    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false, "titleFontSize":18},"scale":{"domain":[0,14]}},
     "tooltip":[{"field":"AverageHouseholdIncome", "aggregate":"count", "title":"Number of states"}]
     
     
@@ -64,14 +64,14 @@
       "bin": {"minstep": 10000},
       "title": "Average Income $",
       "scale":{"domain":[60000,140000]},
-      "axis":{"tickCount":7, "values":[60000,80000,100000,120000,135000], "grid": true}
+      "axis":{"tickCount":7, "values":[60000,80000,100000,120000,135000], "grid": true, "titleFontSize":18}
     },
     "color": {
       "value":"#125be3"
 
     },
     "tooltip":[{"field":"AverageHouseholdIncome", "aggregate":"count", "title":"Number of states"}],
-    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false}, "scale":{"domain":[0,14]}}
+    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false, "titleFontSize":18}, "scale":{"domain":[0,14]}}
     
   }}, {"data": {"values": [{}]},"mark":{"type":"text", "size":19,
   "width":100, "fontWeight":"normal", "font":"arial"},
