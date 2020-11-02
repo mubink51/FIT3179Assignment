@@ -55,7 +55,7 @@
         "color": {
           "field": "Politic",
           "scale": {"range": ["#125be3", "#e31212"]},
-          "title": "Political Party"
+          "title": "Party"
         },
         "tooltip": [
           {"field": "Region"},
