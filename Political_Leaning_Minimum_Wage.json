@@ -62,6 +62,17 @@
       },
       "encoding": {"text": {"type": "nominal", "field": "R2"}}
     },
+    {"data": {"values": [{}]},
+      "mark":{
+        "type": "text",
+        "text":"r : -0.59",
+         "color": "firebrick",
+         "align":"right",
+        "x":"width",
+        "y":35,
+        "size":18
+      }
+    },
     {
       "data": {"values": [{}]},
       "layer": [
