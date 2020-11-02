@@ -64,7 +64,7 @@
       ],
       "mark": {
         "type": "text",
-        "color": "firebrick",
+        "color": "gray",
         "x": "width",
         "align": "right",
         "y": 12,
@@ -76,7 +76,7 @@
       "mark":{
         "type": "text",
         "text":"r : -0.81",
-         "color": "firebrick",
+         "color": "gray",
          "align":"right",
         "x":"width",
         "y":35,
