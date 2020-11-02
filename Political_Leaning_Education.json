@@ -50,7 +50,7 @@
       }
     },
     {
-      "mark": {"type": "line", "color": "firebrick"},
+      "mark": {"type": "line", "color": "saddlebrown"},
       "transform": [{"regression": "Bachelors", "on": "adjmov"}],
       "encoding": {
         "x": {"field": "adjmov", "type": "quantitative"},
