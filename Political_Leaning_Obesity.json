@@ -1,4 +1,3 @@
-
 { "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "height": 400,
   "width": "container",
@@ -60,6 +59,17 @@
         "size": 18
       },
       "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    },
+    {"data": {"values": [{}]},
+      "mark":{
+        "type": "text",
+        "text":"r : 0.74",
+         "color": "firebrick",
+         "align":"right",
+        "x":"width",
+        "y":35,
+        "size":18
+      }
     },
     {
       "data": {"values": [{}]},
