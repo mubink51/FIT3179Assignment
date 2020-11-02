@@ -40,7 +40,7 @@
       }
     },
     {
-      "mark": {"type": "line", "color": "firebrick"},
+      "mark": {"type": "line", "color": "saddlebrown"},
       "transform": [{"regression": "High_Min_Wage", "on": "adjmov"}],
       "encoding": {
         "x": {"field": "adjmov", "type": "quantitative"},
@@ -54,7 +54,7 @@
       ],
       "mark": {
         "type": "text",
-        "color": "firebrick",
+        "color": "gray",
         "x": "width",
         "align": "right",
         "y": 12,
@@ -66,7 +66,7 @@
       "mark":{
         "type": "text",
         "text":"r : -0.59",
-         "color": "firebrick",
+         "color": "gray",
          "align":"right",
         "x":"width",
         "y":35,
