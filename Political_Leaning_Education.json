@@ -75,7 +75,7 @@
     {"data": {"values": [{}]},
       "mark":{
         "type": "text",
-        "text":"r : 0.81",
+        "text":"r : -0.81",
          "color": "firebrick",
          "align":"right",
         "x":"width",
