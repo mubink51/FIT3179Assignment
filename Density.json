@@ -25,7 +25,7 @@
           "mark": {"type": "bar", "interpolate": "cardinal", "binSpacing": 1},
           "transform": [{"filter": "datum.Winning_Party == 'Republicans'"}],
           "width": 450,
-          "height": 225,
+          "height": 210,
           "encoding": {
             "x": {
               "field": "AverageHouseholdIncome",
@@ -89,7 +89,7 @@
           "mark": {"type": "bar", "interpolate": "cardinal"},
           "transform": [{"filter": "datum.Winning_Party == 'Democrats'"}],
           "width": 450,
-           "height":225,
+           "height":210,
           "encoding": {
             "x": {
               "field": "AverageHouseholdIncome",
