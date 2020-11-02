@@ -4,96 +4,165 @@
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Assignment/main/final.csv"
   },
   "background": "#f5f3ed",
-  "params":[
-    {"name":"Income_above", "value":60000,
-    "bind":{"input":"range","min":60000,"max":135000,"name": "Minimum Income"}
+  "params": [
+    {
+      "name": "Income_above",
+      "value": 60000,
+      "bind": {
+        "input": "range",
+        "min": 60000,
+        "max": 135000,
+        "name": "Minimum Income"
+      }
     }
   ],
-  "transform": [{"filter":"datum.AverageHouseholdIncome > Income_above"}],
-  "vconcat":[
-    
+  "transform": [{"filter": "datum.AverageHouseholdIncome > Income_above"}],
+  "vconcat": [
     {
-      "layer":[
-      {
-  "title": {"text": "Distrubtion of Income by Party", "fontSize": 25}, "mark": {"type": "bar", "interpolate": "cardinal", "binSpacing": 1},
-  "transform": [
-    {"filter":"datum.Winning_Party == 'Republicans'"}
+      "layer": [
+        {
+          "title": {"text": "Distrubtion of Income by Party", "fontSize": 25},
+          "mark": {"type": "bar", "interpolate": "cardinal", "binSpacing": 1},
+          "transform": [{"filter": "datum.Winning_Party == 'Republicans'"}],
+          "width": 450,
+          "height": 225,
+          "encoding": {
+            "x": {
+              "field": "AverageHouseholdIncome",
+              "bin": {"minstep": 10000},
+              "title": "Average Income $",
+              "scale": {"domain": [60000, 140000]},
+              "axis": {
+                "ticks": false,
+                "labels": false,
+                "title": " ",
+                "values": [60000, 80000, 100000, 120000, 135000],
+                "grid": true
+              }
+            },
+            "color": {
+              "field": "Winning_Party",
+              "scale": {"range": ["#e31212"]},
+              "legend": null
+            },
+            "y": {
+              "aggregate": "count",
+              "title": "Number Of States",
+              "axis": {"grid": false, "titleFontSize": 18},
+              "scale": {"domain": [0, 14]}
+            },
+            "tooltip": [
+              {
+                "field": "AverageHouseholdIncome",
+                "aggregate": "count",
+                "title": "Number of states"
+              }
+            ]
+          }
+        },
+        {
+          "data": {"values": [{}]},
+          "mark": {
+            "type": "text",
+            "size": 19,
+            "width": 100,
+            "fontWeight": "normal",
+            "font": "arial"
+          },
+          "encoding": {
+            "text": {
+              "condition": {
+                "test": "Income_above < 101000 ",
+                "value": ["Average Republican ", "Household Income $86,662"]
+              }
+            },
+            "color": {"value": "black"},
+            "x": {"value": 300},
+            "y": {"value": 14}
+          }
+        }
+      ]
+    },
+    {
+      "layer": [
+        {
+          "mark": {"type": "bar", "interpolate": "cardinal"},
+          "transform": [{"filter": "datum.Winning_Party == 'Democrats'"}],
+          "width": 450,
+           "height":225,
+          "encoding": {
+            "x": {
+              "field": "AverageHouseholdIncome",
+              "bin": {"minstep": 10000},
+              "title": "Average Income $",
+              "scale": {"domain": [60000, 140000]},
+              "axis": {
+                "tickCount": 7,
+                "values": [60000, 80000, 100000, 120000, 135000],
+                "grid": true,
+                "titleFontSize": 18
+              }
+            },
+            "color": {"value": "#125be3"},
+            "tooltip": [
+              {
+                "field": "AverageHouseholdIncome",
+                "aggregate": "count",
+                "title": "Number of states"
+              }
+            ],
+            "y": {
+              "aggregate": "count",
+              "title": "Number Of States",
+              "axis": {"grid": false, "titleFontSize": 18},
+              "scale": {"domain": [0, 14]}
+            }
+          }
+        },
+        {
+          "data": {"values": [{}]},
+          "mark": {
+            "type": "text",
+            "size": 19,
+            "width": 100,
+            "fontWeight": "normal",
+            "font": "arial"
+          },
+          "encoding": {
+            "text": {
+              "condition": {
+                "test": "Income_above < 134500 ",
+                "value": ["Average Democratic Household", "Income $107,413"]
+              }
+            },
+            "color": {"value": "black"},
+            "x": {"value": 149},
+            "y": {"value": 38}
+          }
+        }
+      ]
+    }
   ],
-  
-  "width": 450,
-  "encoding": {
-    
-    "x": {
-      "field": "AverageHouseholdIncome",
-      "bin": {"minstep": 10000},
-      "title": "Average Income $",
-      "scale":{"domain":[60000,140000]}
-      ,"axis":{"ticks":false, "labels":false, "title":" ","values":[60000,80000,100000,120000,135000], "grid": true}
-    },
-    "color": {
-      "field": "Winning_Party",
-      "scale": {"range": ["#e31212"]},
-      "legend": null
-    },
-    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false, "titleFontSize":18},"scale":{"domain":[0,14]}},
-    "tooltip":[{"field":"AverageHouseholdIncome", "aggregate":"count", "title":"Number of states"}]
-    
-    
-  }
-  }
-  ,
-  {"data": {"values": [{}]},"mark":{"type":"text", "size":19,
-  "width":100, "fontWeight":"normal", "font":"arial"},
-  "encoding":{
-    "text":{"condition": {"test": "Income_above < 101000 ", "value":["Average Republican ","Household Income $86,662"]}},
-    "color":{"value":"black"},
-    "x":{"value":300},
-    "y":{"value":14}
-  }}
-  
-  ]},
-  { 
-  "layer":[{"mark": {"type": "bar", "interpolate": "cardinal"},
-  "transform": [
-    {"filter":"datum.Winning_Party == 'Democrats'"}
-  ],
-  "width":  450, 
-  "encoding": {
-    "x": {
-      "field": "AverageHouseholdIncome",
-      "bin": {"minstep": 10000},
-      "title": "Average Income $",
-      "scale":{"domain":[60000,140000]},
-      "axis":{"tickCount":7, "values":[60000,80000,100000,120000,135000], "grid": true, "titleFontSize":18}
-    },
-    "color": {
-      "value":"#125be3"
-
-    },
-    "tooltip":[{"field":"AverageHouseholdIncome", "aggregate":"count", "title":"Number of states"}],
-    "y": {"aggregate": "count", "title": "Number Of States","axis":{"grid":false, "titleFontSize":18}, "scale":{"domain":[0,14]}}
-    
-  }}, {"data": {"values": [{}]},"mark":{"type":"text", "size":19,
-  "width":100, "fontWeight":"normal", "font":"arial"},
-  "encoding":{
-    "text":{"condition": {"test": "Income_above < 134500 ", "value":["Average Democratic Household", "Income $107,413"]}},
-    "color":{"value":"black"},
-    "x":{"value":149},
-    "y":{"value":38}
-  }}]}],
-  
   "config": {
-  "axis":{
-      "labelFontSize":12,
-      "titleFontSize":14,
-    "labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 14,
+      "labelFont": "Lucida Sans Unicode",
+      "titleFont": "Lucida Sans Unicode"
     },
-    "axisX": {
-      "minExtent": -5
+    "axisX": {"minExtent": -5},
+    "legend": {
+      "labelFont": "Lucida Sans Unicode",
+      "titleFont": "Lucida Sans Unicode"
     },
-     "legend": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
-  "header": {"labelFont": "Lucida Sans Unicode", "titleFont": "Lucida Sans Unicode"},
-  "mark": {"font": "Lucida Sans Unicode"},
-  "title": {"font": "Lucida Sans Unicode", "subtitleFont": "Lucida Sans Unicode"}
+    "header": {
+      "labelFont": "Lucida Sans Unicode",
+      "titleFont": "Lucida Sans Unicode"
+    },
+    "mark": {"font": "Lucida Sans Unicode"},
+    "title": {
+      "font": "Lucida Sans Unicode",
+      "subtitleFont": "Lucida Sans Unicode"
+    }
   }
 }
