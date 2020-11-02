@@ -3,7 +3,7 @@
   "width": 550,
   "height": 450,
   "background": "#f5f3ed",
-  "title": {"text": "The Democratic State", "fontSize": 25},
+  "title": {"text": "The 2016 Democratic State", "fontSize": 25},
   "data": {
     "url": "https://raw.githubusercontent.com/mubink51/FIT3179Hw2/main/ne_110m_admin_1_states_provinces%20(1).json",
     "format": {
