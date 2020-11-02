@@ -1,15 +1,29 @@
 
-https://data.world/dash/2016-electoral-college-results -> Election
+US Regions/State names	
+https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States
 
-https://www.kaggle.com/annedunn/obesity-and-gdp-rates-from-50-states-in-20142017 -> Obesity, GDP, population
-https://www.kaggle.com/lislejoem/us-minimum-wage-by-state-from-1968-to-2017 -> Minimum wage
-https://www.kaggle.com/georgetryfiates/fec-2016-us-presidential-results? -> Detailed election results
+Obesity,Average-age	
+https://www.kaggle.com/annedunn/obesity-and-gdp-rates-from-50-states-in-20142017
+https://www.cdc.gov/obesity/stateprograms/fundedstate
+s/pdf/district-of-columbia-state-profile.pdf
 
-https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States -> Detailed regions
-https://www.census.gov/data/tables/time-series/demo/popest/2010s-state-total.html -> population over time
-https://www.statista.com/statistics/238997/minimum-wage-by-us-state/ -> Minimum Wages
-https://dqydj.com/average-income-by-state-median-top-percentiles/ -> Average Household Income
-https://www.cdc.gov/obesity/stateprograms/fundedstates/pdf/district-of-columbia-state-profile.pdf -> DC obesity
-https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_educational_attainment -> Bachelors
-https://www.insure.com/cost-of-living-by-state.html -> Cost of living
-https://en.wikipedia.org/wiki/List_of_United_States_presidential_candidates_by_number_of_votes_received -> Popular vote election results
+Minimum-Wage	
+https://www.dol.gov/agencies/whd/minimum-wage/state
+
+Population
+https://www.census.gov/data/tables/time-series/demo/popest/2010s-state-total.html
+
+Income
+https://dqydj.com/average-income-by-state-median-top-percentiles/
+
+US Election Results
+https://www.kaggle.com/georgetryfiates/fec-2016-us-presidential-results?
+https://en.wikipedia.org/wiki/List_of_United_States_presidential_candidates_by_number_of_votes_received
+
+
+Education Levels
+https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_educational_attainment
+
+Cost of Living
+https://www.insure.com/cost-of-living-by-state.html
+
